@@ -42,12 +42,28 @@ EVERY DAY, FOR EVERYONE  (no LLM)
  4. Find tips: exact codes → clinician-reviewed synonym map → embeddings only for leftovers
  5. Safety filter (code): contraindications × red flags, diagnosis lock, clinician restrictions, review status,
     sex/age/pregnancy, diet, language
- 6. Rank: severity + recency → slots (pinned safety tip, top issue ≤ 2 of 5, ≥ 1 prescription slot, rotation)
+ 6. Rank: severity + recency → top 5 = pinned safety tip (if a red flag) + most severe issue ×2
+    + 1 prescribed + 1 rotating issue (the pin counts inside the five)
  7. Engagement picks which video fills a slot (never what issue)
  8. Repeat rules → today's feed
 
 OFFLINE: embed new tips once · LLM drafts vocabulary additions → clinicians review · check each language version
 ```
+
+**What extraction returns** (a slice of Reema's real output; the full profile also has language, age, all issues,
+prescriptions and restrictions):
+
+```json
+{
+  "red_flags": [{ "code": "suspected_cardiac", "status": "active",
+                  "quote": "chest pain and left-hand numbness" }],
+  "tests":     [{ "code": "thyroid_panel", "status": "scheduled",
+                  "quote": "to be completed this week" }]
+}
+```
+
+Code checks every fact: is the quote really in the profile, do its words fit the status ("to be completed" can't be
+"results received")? Note what's absent: no hypothyroidism, because the profile says no tests were done.
 
 **LLM vs embeddings vs rules**
 
@@ -68,8 +84,8 @@ OFFLINE: embed new tips once · LLM drafts vocabulary additions → clinicians r
 | D5 | Tips assuming a diagnosis stay locked until confirmed; show test-prep tips meanwhile | Don't imply a diagnosis she doesn't have |
 | D6 | Sensitive tips always discreet (tap to play, neutral title, user setting) | No need to guess where she's watching from |
 | D7 | Every fact carries a status + verbatim quote; layered checks; when unsure, pick the earlier/safer status | "Planned recorded as done" and negation are top documented extraction failures; make errors rare, visible, cheap |
-| D8 | Top issue ≤ 2 of 5 slots; ≥ 1 prescription slot; other issues rotate across days | Users watch ~3–5 a day; pure priority would give 5 period tips |
-| D11 | LLM extraction only when the profile changes; feed recomposed daily; new red flag → immediate filter | LLM cost scales with changes, not users |
+| D8 | Top 5 = pinned red-flag tip (if any) + most severe issue ×2 + 1 prescription + 1 rotating issue; red flags aren't ranked as issues | Users watch ~3–5 a day; pure priority would give 5 period tips |
+| D11 | LLM extraction only when the profile changes; feed recomposed daily; a red flag raised by the chat/call agent (already an LLM) → feed re-filtered immediately with code | LLM cost scales with changes, not users |
 | D13 | Severity decides what she sees; engagement decides how it's shown | Engagement ≠ benefit (weak-evidence health videos get more views) |
 | D18 | No personalized feed until basic screening; before that, only universally safe tips | A new user may carry an undisclosed red flag |
 
@@ -95,7 +111,9 @@ OFFLINE: embed new tips once · LLM drafts vocabulary additions → clinicians r
   "cleared for moderate exercise" not treated as a limit, shift-work tips for day workers…). Fixed → 6/6.
 
 **Extraction models** (84 safety-critical checks): Haiku 5.5 0 errors; GPT-6 Luna 1 error, caught by the
-negation check; Gemini 3.8 Flash 0 errors at 5× the cost; DeepSeek dropped for invalid output.
+negation check; Gemini 3.8 Flash 0 errors at 5× the cost; DeepSeek dropped for invalid output. After the blind
+cross-check refined the answers, all models shared one miss: "reduce salt" coded as a habit, not a restriction —
+a vocabulary overlap (two codes for one idea), with no safety impact.
 
 **After launch:** system health (flag rates, review queue), weekly clinician audit of sampled feeds, user
 response normalized per user (completion, dislikes), and the real outcome — do users follow their care plan?
