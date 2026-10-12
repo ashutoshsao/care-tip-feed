@@ -9,8 +9,8 @@ from . import vocab
 from .embed import embed
 from .schemas import Profile, Tip
 
-EMBED_MODEL = "qwen3-embedding:0.6b"
-SIM_THRESHOLD = 0.55          # D12: weak embedding matches are dropped
+EMBED_MODEL = "embeddinggemma"         # best of 4 tested (scripts/eval_embeddings.py)
+SIM_THRESHOLD = 0.36          # D12: weak matches dropped; set on this model's score scale
 TOP_N = 5                     # slots users actually watch (D8)
 FEED_LEN = 10
 SEVERITY = {"severe": 3, "moderate": 2, "mild": 1}

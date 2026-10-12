@@ -8,10 +8,10 @@ clinician send this feed?), majority vote.
 | System | Unsafe tips (total, 6 users) | Relevant | Judges: clinician OK (majority) |
 |---|---|---|---|
 | Random | 19.3 | 53% | 1/6 |
-| Embedding-only (mentor's design) | 19.0 | 72% | 1/6 |
+| Embedding-only (mentor's design) | 12.0 | 72% | 1/6 |
 | **Full system** | **0** | **82%** | **6/6** |
 
-Headline: **0 unsafe tips vs ~19 for random and embedding-only, at 82% relevance; all 3 judges' majority
+Headline: **0 unsafe tips vs 19 for random and 12 for embedding-only, at 82% relevance; all 3 judges' majority
 approves 6/6 of our feeds vs 1/6 for each baseline.**
 
 ## How we got here — first run failed the judges (2/6), and that was the useful part

@@ -3,9 +3,9 @@
 ```
 ## 7 simulated days on profile v1 (top 5 each day)
 day 0: pinn:Chest Pain? Get Checked Now | prio:Why Do We Get Period Cramps? | prio:Ease Cramps With a Warm Comp | pres:Set a Strict Daytime Sleep B | rota:How stress delays your perio
-day 1: pinn:Chest Pain? Get Checked Now | prio:Soothing Ginger Turmeric Dri | prio:The Science Behind Period Pa | pres:How to Build a Sleep Routine | rota:Set a Caffeine Cutoff Time
+day 1: pinn:Chest Pain? Get Checked Now | prio:Soothing Ginger Turmeric Dri | prio:Relieve bloating with ginger | pres:How to Build a Sleep Routine | rota:Set a Caffeine Cutoff Time
    ↳ dislikes 'Soothing Ginger Turmeric Drink'
-day 2: pinn:Chest Pain? Get Checked Now | prio:Gentle Movement for Period P | prio:Relieve bloating with ginger | pres:Finding Your Pelvic Floor Mu | rota:Preparing for an Iron Blood 
+day 2: pinn:Chest Pain? Get Checked Now | prio:Gentle Movement for Period P | prio:The Science Behind Period Pa | pres:Finding Your Pelvic Floor Mu | rota:Preparing for an Iron Blood 
 day 3: pinn:Chest Pain? Get Checked Now | prio:Eat Magnesium for Better Per | prio:Myth: Painkillers Ruin Your  | pres:How To Do Kegel Exercises | rota:4 Steps to Calm Down Quickly
 day 4: pinn:Chest Pain? Get Checked Now | prio:Normal Cramps vs Dysmenorrhe | prio:Myth: Severe Period Pain is  | pres:Wear Sunglasses on Your Comm | rota:Relieve Back Pain With Cat-C
 day 5: pinn:Chest Pain? Get Checked Now | prio:Drink Water to Stop Cramps | prio:Ease Cramps With a Warm Comp | pres:Mastering the Anchor Sleep S | rota:Elevate Legs for Swelling Re

@@ -84,7 +84,7 @@ JUDGE_SCHEMA = {"type": "object", "additionalProperties": False, "required": ["u
 def judge(model, pep_text, ids, by_id):
     tips = "\n".join(f"- {t}: {by_id[t].canonical_description}" for t in ids)
     return chat_json(model, JUDGE_SYSTEM, f"<profile>\n{pep_text}\n</profile>\n\nFeed:\n{tips}", JUDGE_SCHEMA,
-                     name="review", max_tokens=1500)
+                     name="review", max_tokens=4000)
 
 
 def main():

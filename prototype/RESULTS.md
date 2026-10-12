@@ -7,7 +7,7 @@ Synthetic data, built to test the design (decisions D1–D18 in `../plan.md`). T
 | System | Unsafe tips (6 users) | Relevant | Judge panel approves (majority of 3 providers) |
 |---|---|---|---|
 | Random | 19.3 | 53% | 1/6 |
-| Embedding-only (mentor's design) | 19.0 | 72% | 1/6 |
+| Embedding-only (mentor's design) | 12.0 | 72% | 1/6 |
 | **Full system** | **0** | **82%** | **6/6** |
 
 Judges: Claude Sonnet 5.5, Gemini 3.1 Pro, GPT-6.1 Sol. Details: `data/feed_eval_findings.md`.

@@ -3,7 +3,7 @@
 | | Unsafe | Relevant | Approved |
 |---|---|---|---|
 | Random | 19.3 | 53% | 1 of 6 |
-| Embeddings | 19.0 | 72% | 1 of 6 |
+| Embeddings | 12.0 | 72% | 1 of 6 |
 | This design | 0 | 82% | 6 of 6 |
 
 6 test users, judged by 3 models from 3 companies

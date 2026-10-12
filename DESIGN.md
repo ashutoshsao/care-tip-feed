@@ -6,7 +6,7 @@ health profile. Hundreds of thousands of users, many Indian languages, a health 
 
 **Answer in one line:** an LLM reads the profile only when it changes; everything that runs daily is plain code
 and lookups — a hard safety filter, then ranking by severity. In a prototype it showed **0 unsafe tips vs
-~19 for random or embedding-only feeds**, at 82% relevance.
+19 for random and 12 for embedding-only feeds**, at 82% relevance.
 
 ---
 
@@ -68,6 +68,22 @@ OFFLINE: embed new tips once · LLM drafts vocabulary additions → clinicians r
 | Embeddings | Tips once; matching out-of-vocabulary issues; nothing safety-related | Meaning-based fallback; they can't handle negation, so they only *suggest* |
 | Code | Checks, safety filter, matching, ranking — everything daily | Predictable, auditable, near-free at 500k users |
 
+**Models used, and where**
+
+| Job | Model | Runs | Why this one |
+|---|---|---|---|
+| Profile extraction | Claude Haiku 5.5 | API, nightly batch | 0 safety errors in 84 checks; cheapest of the accurate ones |
+| Verify flagged facts | Gemini 3.8 Flash (a different family) | API, only when flagged | A different family catches different mistakes |
+| Semantic matching | EmbeddingGemma (308M) | Local (Ollama), no API | Best of 4 tested: 94% English and Hindi alike, clearest score spread |
+| Daily feed | None (code) | Every user, every day | Predictable, auditable, free |
+| Prototype only: tip library | Gemini 3.1 Pro | API | Synthetic data with planted traps |
+| Prototype only: answer-key check | Gemini 3.1 Pro, GPT-6.1 Sol | API | Non-Claude, blind, majority rule |
+| Prototype only: judges | Claude Sonnet 5.5, Gemini 3.1 Pro, GPT-6.1 Sol | API | Three providers, majority vote |
+
+Tested and not chosen: GPT-6 Luna (half the cost, one error the checks caught), Gemini 3.8 Flash (same accuracy,
+5× cost) and DeepSeek V4.1 Flash (invalid output) for extraction; Qwen3-Embedding, BGE-M3 and EmbeddingGemma 2
+for embeddings. Caveat: Gemini 3.1 Pro both generated the tips and judged feeds; the 3-judge majority limits that.
+
 ## 3. Key decisions (18 logged; the important ones)
 
 | # | Decision | Why |
@@ -97,7 +113,7 @@ OFFLINE: embed new tips once · LLM drafts vocabulary additions → clinicians r
 | System | Unsafe tips | Relevant | 3-provider judge panel approves |
 |---|---|---|---|
 | Random | 19.3 | 53% | 1/6 |
-| Embedding-only | 19.0 | 72% | 1/6 |
+| Embedding-only | 12.0 | 72% | 1/6 |
 | **This design** | **0** | **82%** | **6/6** |
 
 - Code metrics are scored against hand-labeled truth, cross-checked blind by two non-Claude models (majority rule).
@@ -129,6 +145,8 @@ A/B test against the current feed with a small randomized slice. Never optimize 
 ## 7. Limits and open questions
 
 - Synthetic data validates the design, not production thresholds; real PEPs are messier and code-mixed.
+- Tips aren't yet checked against prescriptions: a judge caught a "midday sun for vitamin D" tip clashing with
+  Reema's prescribed 8 AM–3 PM sleep block. Next: tag tips with timing and check them against prescriptions.
 - Open questions for Disha: how is the library produced across languages? Fixed daily feed size or endless
   scroll? When is the feed first shown to a new user?
 
