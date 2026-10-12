@@ -11,3 +11,4 @@
 My first version scored 2 of 6
 
 > Say: "The numbers matter less than the loop: evaluate, find where it fails, fix."
+> Also: "Switching to a better embedding model made the baseline safer, 19 down to 12, but not safe. Safety needs the filter."

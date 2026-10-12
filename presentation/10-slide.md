@@ -6,3 +6,4 @@
 Questions?
 
 > Say: "Happy to go deep on any of these."
+> Also: "Next I'd check tips against prescriptions. A judge caught a midday-sun tip clashing with Reema's daytime sleep block."
