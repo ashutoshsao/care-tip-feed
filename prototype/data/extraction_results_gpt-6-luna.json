@@ -1,0 +1,1489 @@
+[
+ {
+  "model": "openai/gpt-6-luna",
+  "pep": "reema_v1",
+  "flags": [],
+  "unresolved": [],
+  "raw": {
+   "critical_errors": [],
+   "critical_checks": 9,
+   "issue_recall": [
+    8,
+    8
+   ],
+   "intervention_recall": [
+    6,
+    6
+   ]
+  },
+  "after_checks": {
+   "critical_errors": [],
+   "critical_checks": 9,
+   "issue_recall": [
+    8,
+    8
+   ],
+   "intervention_recall": [
+    6,
+    6
+   ]
+  },
+  "profile": {
+   "language": "hi",
+   "sex": "female",
+   "age": 27,
+   "life_stage": "none",
+   "diet_type": "nonveg",
+   "workout_setting": "home",
+   "red_flags": [
+    {
+     "code": "suspected_cardiac",
+     "status": "active",
+     "quote": "intermittent chest pain and left-hand numbness (every 2-3 days)"
+    }
+   ],
+   "issues": [
+    {
+     "code": "cycle_irregularity",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "Period irregularities - cycle length varies, sometimes 8 days off; bleeding duration reduced from 5-6 days to 2 days; inconsistent flow"
+    },
+    {
+     "code": "menstrual_pain",
+     "status": "confirmed",
+     "severity": "severe",
+     "chronic": false,
+     "quote": "severe menstrual pain"
+    },
+    {
+     "code": "fatigue",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "fatigue; lethargy"
+    },
+    {
+     "code": "shift_work_sleep",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "erratic sleep cycle due to night shifts (sleep at 3-4 AM)"
+    },
+    {
+     "code": "insomnia",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "difficulty sleeping during day"
+    },
+    {
+     "code": "lower_back_pain",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": true,
+     "quote": "chronic lower back pain"
+    },
+    {
+     "code": "leg_swelling",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "leg swelling (worse at night)"
+    },
+    {
+     "code": "vaginal_laxity",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "Vaginal laxity (post-delivery)"
+    },
+    {
+     "code": "stress",
+     "status": "confirmed",
+     "severity": "severe",
+     "chronic": false,
+     "quote": "High stress level"
+    }
+   ],
+   "tests": [
+    {
+     "code": "thyroid_panel",
+     "status": "scheduled",
+     "result_summary": null,
+     "quote": "home-sample collection scheduled"
+    },
+    {
+     "code": "iron_panel",
+     "status": "scheduled",
+     "result_summary": null,
+     "quote": "home-sample collection scheduled"
+    },
+    {
+     "code": "vitamin_d",
+     "status": "scheduled",
+     "result_summary": null,
+     "quote": "home-sample collection scheduled"
+    }
+   ],
+   "goals": [
+    {
+     "code": "weight_loss",
+     "quote": "Weight Loss - at least 10 kg"
+    },
+    {
+     "code": "regular_cycles",
+     "quote": "period issues - irregular cycles, reduced bleeding duration, severe pain"
+    },
+    {
+     "code": "pain_relief",
+     "quote": "severe menstrual pain"
+    },
+    {
+     "code": "better_sleep",
+     "quote": "irregular sleep"
+    },
+    {
+     "code": "stress_reduction",
+     "quote": "High stress level"
+    }
+   ],
+   "interventions": [
+    {
+     "code": "ginger_turmeric_drink",
+     "quote": "Warm ginger-turmeric drink daily for cramps and metabolism"
+    },
+    {
+     "code": "warm_compress",
+     "quote": "gentle warm compresses for pain"
+    },
+    {
+     "code": "sleep_block",
+     "quote": "fixed sleep block (8 AM - 3 PM with blackout curtains) post night shift"
+    },
+    {
+     "code": "night_shift_meal_plan",
+     "quote": "7-day meal plan aligned with night shift schedule"
+    },
+    {
+     "code": "meal_photo_logging",
+     "quote": "daily meal photo sharing via chat for progress tracking"
+    },
+    {
+     "code": "kegel",
+     "quote": "Kegel exercises (10 reps, 3x daily)"
+    }
+   ],
+   "restrictions": [],
+   "other": [
+    {
+     "text": "Body heaviness",
+     "quote": "body heaviness"
+    }
+   ]
+  }
+ },
+ {
+  "model": "openai/gpt-6-luna",
+  "pep": "reema_v1",
+  "flags": [],
+  "unresolved": [],
+  "raw": {
+   "critical_errors": [],
+   "critical_checks": 9,
+   "issue_recall": [
+    8,
+    8
+   ],
+   "intervention_recall": [
+    6,
+    6
+   ]
+  },
+  "after_checks": {
+   "critical_errors": [],
+   "critical_checks": 9,
+   "issue_recall": [
+    8,
+    8
+   ],
+   "intervention_recall": [
+    6,
+    6
+   ]
+  },
+  "profile": {
+   "language": "hi",
+   "sex": "female",
+   "age": 27,
+   "life_stage": "postpartum",
+   "diet_type": "nonveg",
+   "workout_setting": "home",
+   "red_flags": [
+    {
+     "code": "suspected_cardiac",
+     "status": "active",
+     "quote": "intermittent chest pain and left-hand numbness (every 2-3 days)"
+    }
+   ],
+   "issues": [
+    {
+     "code": "cycle_irregularity",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "Period irregularities - cycle length varies, sometimes 8 days off; bleeding duration reduced from 5-6 days to 2 days; inconsistent flow"
+    },
+    {
+     "code": "menstrual_pain",
+     "status": "confirmed",
+     "severity": "severe",
+     "chronic": false,
+     "quote": "severe menstrual pain"
+    },
+    {
+     "code": "fatigue",
+     "status": "confirmed",
+     "severity": "severe",
+     "chronic": false,
+     "quote": "fatigue; lethargy"
+    },
+    {
+     "code": "shift_work_sleep",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "erratic sleep cycle due to night shifts (sleep at 3-4 AM)"
+    },
+    {
+     "code": "insomnia",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "difficulty sleeping during day"
+    },
+    {
+     "code": "lower_back_pain",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": true,
+     "quote": "chronic lower back pain"
+    },
+    {
+     "code": "leg_swelling",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "leg swelling (worse at night)"
+    },
+    {
+     "code": "vaginal_laxity",
+     "status": "confirmed",
+     "severity": "mild",
+     "chronic": false,
+     "quote": "Vaginal laxity (post-delivery)"
+    },
+    {
+     "code": "stress",
+     "status": "confirmed",
+     "severity": "severe",
+     "chronic": false,
+     "quote": "High stress level"
+    }
+   ],
+   "tests": [
+    {
+     "code": "thyroid_panel",
+     "status": "scheduled",
+     "result_summary": null,
+     "quote": "home-sample collection scheduled"
+    },
+    {
+     "code": "iron_panel",
+     "status": "scheduled",
+     "result_summary": null,
+     "quote": "home-sample collection scheduled"
+    },
+    {
+     "code": "vitamin_d",
+     "status": "scheduled",
+     "result_summary": null,
+     "quote": "home-sample collection scheduled"
+    }
+   ],
+   "goals": [
+    {
+     "code": "weight_loss",
+     "quote": "Weight Loss - at least 10 kg"
+    }
+   ],
+   "interventions": [
+    {
+     "code": "ginger_turmeric_drink",
+     "quote": "Warm ginger-turmeric drink daily for cramps and metabolism"
+    },
+    {
+     "code": "warm_compress",
+     "quote": "gentle warm compresses for pain"
+    },
+    {
+     "code": "sleep_block",
+     "quote": "fixed sleep block (8 AM - 3 PM with blackout curtains) post night shift"
+    },
+    {
+     "code": "night_shift_meal_plan",
+     "quote": "7-day meal plan aligned with night shift schedule"
+    },
+    {
+     "code": "meal_photo_logging",
+     "quote": "daily meal photo sharing via chat for progress tracking"
+    },
+    {
+     "code": "kegel",
+     "quote": "Kegel exercises (10 reps, 3x daily)"
+    }
+   ],
+   "restrictions": [],
+   "other": []
+  }
+ },
+ {
+  "model": "openai/gpt-6-luna",
+  "pep": "reema_v2",
+  "flags": [],
+  "unresolved": [],
+  "raw": {
+   "critical_errors": [],
+   "critical_checks": 9,
+   "issue_recall": [
+    10,
+    10
+   ],
+   "intervention_recall": [
+    5,
+    5
+   ]
+  },
+  "after_checks": {
+   "critical_errors": [],
+   "critical_checks": 9,
+   "issue_recall": [
+    10,
+    10
+   ],
+   "intervention_recall": [
+    5,
+    5
+   ]
+  },
+  "profile": {
+   "language": "hi",
+   "sex": "female",
+   "age": 27,
+   "life_stage": "none",
+   "diet_type": "nonveg",
+   "workout_setting": "home",
+   "red_flags": [
+    {
+     "code": "suspected_cardiac",
+     "status": "cleared",
+     "quote": "chest pain evaluated by cardiologist - ECG and echo normal, pain found to be musculoskeletal, cleared for moderate exercise"
+    }
+   ],
+   "issues": [
+    {
+     "code": "cycle_irregularity",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "Period irregularities - cycle length varies, sometimes 8 days off; bleeding duration reduced from 5-6 days to 2 days"
+    },
+    {
+     "code": "menstrual_pain",
+     "status": "confirmed",
+     "severity": "severe",
+     "chronic": false,
+     "quote": "severe menstrual pain"
+    },
+    {
+     "code": "fatigue",
+     "status": "confirmed",
+     "severity": "mild",
+     "chronic": false,
+     "quote": "fatigue"
+    },
+    {
+     "code": "shift_work_sleep",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": true,
+     "quote": "erratic sleep cycle due to night shifts"
+    },
+    {
+     "code": "lower_back_pain",
+     "status": "confirmed",
+     "severity": "mild",
+     "chronic": true,
+     "quote": "chronic lower back pain"
+    },
+    {
+     "code": "leg_swelling",
+     "status": "confirmed",
+     "severity": "mild",
+     "chronic": false,
+     "quote": "leg swelling (worse at night), improving with leg elevation"
+    },
+    {
+     "code": "vitamin_d_deficiency",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "Vitamin D 12 ng/mL (deficient)"
+    },
+    {
+     "code": "iron_deficiency",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "haemoglobin 10.6 g/dL with low ferritin (iron deficiency confirmed)"
+    },
+    {
+     "code": "hypothyroidism",
+     "status": "resolved",
+     "severity": "mild",
+     "chronic": false,
+     "quote": "TSH 2.1 (thyroid normal, hypothyroidism ruled out)"
+    },
+    {
+     "code": "vaginal_laxity",
+     "status": "confirmed",
+     "severity": "mild",
+     "chronic": false,
+     "quote": "Vaginal laxity (post-delivery)"
+    },
+    {
+     "code": "stress",
+     "status": "confirmed",
+     "severity": "severe",
+     "chronic": false,
+     "quote": "High stress level"
+    }
+   ],
+   "tests": [
+    {
+     "code": "vitamin_d",
+     "status": "results_received",
+     "result_summary": "Vitamin D 12 ng/mL (deficient)",
+     "quote": "Vitamin D 12 ng/mL (deficient)"
+    },
+    {
+     "code": "iron_panel",
+     "status": "results_received",
+     "result_summary": "Haemoglobin 10.6 g/dL with low ferritin; iron deficiency confirmed",
+     "quote": "haemoglobin 10.6 g/dL with low ferritin (iron deficiency confirmed)"
+    },
+    {
+     "code": "thyroid_panel",
+     "status": "results_received",
+     "result_summary": "TSH 2.1; thyroid normal",
+     "quote": "TSH 2.1 (thyroid normal, hypothyroidism ruled out)"
+    }
+   ],
+   "goals": [
+    {
+     "code": "weight_loss",
+     "quote": "Weight Loss - at least 10 kg"
+    }
+   ],
+   "interventions": [
+    {
+     "code": "ginger_turmeric_drink",
+     "quote": "warm ginger-turmeric drink daily"
+    },
+    {
+     "code": "sleep_block",
+     "quote": "fixed sleep block (8 AM - 3 PM with blackout curtains)"
+    },
+    {
+     "code": "night_shift_meal_plan",
+     "quote": "7-day meal plan aligned with night shift schedule"
+    },
+    {
+     "code": "kegel",
+     "quote": "Kegel exercises (10 reps, 3x daily)"
+    },
+    {
+     "code": "leg_elevation",
+     "quote": "leg elevation in the evening"
+    }
+   ],
+   "restrictions": [],
+   "other": [
+    {
+     "text": "Vitamin D supplementation as advised by doctor",
+     "quote": "Vitamin D supplementation as advised by doctor"
+    },
+    {
+     "text": "iron-rich diet and iron supplements",
+     "quote": "iron-rich diet and iron supplements"
+    }
+   ]
+  }
+ },
+ {
+  "model": "openai/gpt-6-luna",
+  "pep": "reema_v2",
+  "flags": [],
+  "unresolved": [],
+  "raw": {
+   "critical_errors": [],
+   "critical_checks": 9,
+   "issue_recall": [
+    10,
+    10
+   ],
+   "intervention_recall": [
+    5,
+    5
+   ]
+  },
+  "after_checks": {
+   "critical_errors": [],
+   "critical_checks": 9,
+   "issue_recall": [
+    10,
+    10
+   ],
+   "intervention_recall": [
+    5,
+    5
+   ]
+  },
+  "profile": {
+   "language": "hi",
+   "sex": "female",
+   "age": 27,
+   "life_stage": "none",
+   "diet_type": "nonveg",
+   "workout_setting": "home",
+   "red_flags": [
+    {
+     "code": "suspected_cardiac",
+     "status": "cleared",
+     "quote": "chest pain evaluated by cardiologist - ECG and echo normal, pain found to be musculoskeletal, cleared for moderate exercise"
+    }
+   ],
+   "issues": [
+    {
+     "code": "cycle_irregularity",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "Period irregularities - cycle length varies, sometimes 8 days off; bleeding duration reduced from 5-6 days to 2 days"
+    },
+    {
+     "code": "menstrual_pain",
+     "status": "confirmed",
+     "severity": "severe",
+     "chronic": false,
+     "quote": "severe menstrual pain"
+    },
+    {
+     "code": "fatigue",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "fatigue"
+    },
+    {
+     "code": "shift_work_sleep",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": true,
+     "quote": "erratic sleep cycle due to night shifts"
+    },
+    {
+     "code": "lower_back_pain",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": true,
+     "quote": "chronic lower back pain"
+    },
+    {
+     "code": "leg_swelling",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "leg swelling (worse at night), improving with leg elevation"
+    },
+    {
+     "code": "vitamin_d_deficiency",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "Vitamin D 12 ng/mL (deficient)"
+    },
+    {
+     "code": "iron_deficiency",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "haemoglobin 10.6 g/dL with low ferritin (iron deficiency confirmed)"
+    },
+    {
+     "code": "hypothyroidism",
+     "status": "resolved",
+     "severity": "mild",
+     "chronic": false,
+     "quote": "hypothyroidism ruled out"
+    },
+    {
+     "code": "vaginal_laxity",
+     "status": "confirmed",
+     "severity": "mild",
+     "chronic": false,
+     "quote": "Vaginal laxity (post-delivery)"
+    },
+    {
+     "code": "stress",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "High stress level"
+    }
+   ],
+   "tests": [
+    {
+     "code": "vitamin_d",
+     "status": "results_received",
+     "result_summary": "12 ng/mL (deficient)",
+     "quote": "Vitamin D 12 ng/mL (deficient)"
+    },
+    {
+     "code": "iron_panel",
+     "status": "results_received",
+     "result_summary": "haemoglobin 10.6 g/dL with low ferritin",
+     "quote": "haemoglobin 10.6 g/dL with low ferritin (iron deficiency confirmed)"
+    },
+    {
+     "code": "thyroid_panel",
+     "status": "results_received",
+     "result_summary": "TSH 2.1 (thyroid normal)",
+     "quote": "TSH 2.1 (thyroid normal, hypothyroidism ruled out)"
+    }
+   ],
+   "goals": [
+    {
+     "code": "weight_loss",
+     "quote": "Weight Loss - at least 10 kg"
+    }
+   ],
+   "interventions": [
+    {
+     "code": "kegel",
+     "quote": "Kegel exercises (10 reps, 3x daily)"
+    },
+    {
+     "code": "sleep_block",
+     "quote": "fixed sleep block (8 AM - 3 PM with blackout curtains)"
+    },
+    {
+     "code": "ginger_turmeric_drink",
+     "quote": "warm ginger-turmeric drink daily"
+    },
+    {
+     "code": "night_shift_meal_plan",
+     "quote": "7-day meal plan aligned with night shift schedule"
+    },
+    {
+     "code": "leg_elevation",
+     "quote": "leg elevation in the evening"
+    }
+   ],
+   "restrictions": [],
+   "other": [
+    {
+     "text": "Vitamin D supplementation and iron-rich diet and iron supplements were advised.",
+     "quote": "Vitamin D supplementation as advised by doctor; iron-rich diet and iron supplements"
+    }
+   ]
+  }
+ },
+ {
+  "model": "openai/gpt-6-luna",
+  "pep": "arjun",
+  "flags": [],
+  "unresolved": [],
+  "raw": {
+   "critical_errors": [],
+   "critical_checks": 6,
+   "issue_recall": [
+    3,
+    3
+   ],
+   "intervention_recall": [
+    1,
+    1
+   ]
+  },
+  "after_checks": {
+   "critical_errors": [],
+   "critical_checks": 6,
+   "issue_recall": [
+    3,
+    3
+   ],
+   "intervention_recall": [
+    1,
+    1
+   ]
+  },
+  "profile": {
+   "language": "en",
+   "sex": "male",
+   "age": 24,
+   "life_stage": "none",
+   "diet_type": "veg",
+   "workout_setting": "gym",
+   "red_flags": [],
+   "issues": [
+    {
+     "code": "knee_pain",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "Right knee pain after running"
+    },
+    {
+     "code": "muscle_soreness",
+     "status": "confirmed",
+     "severity": "mild",
+     "chronic": false,
+     "quote": "muscle soreness after workouts"
+    },
+    {
+     "code": "acid_reflux",
+     "status": "confirmed",
+     "severity": "mild",
+     "chronic": false,
+     "quote": "occasional acid reflux after late dinners"
+    }
+   ],
+   "tests": [],
+   "goals": [
+    {
+     "code": "muscle_gain",
+     "quote": "Muscle gain - wants to add 5 kg lean mass in 6 months"
+    }
+   ],
+   "interventions": [
+    {
+     "code": "strength_training_plan",
+     "quote": "Progressive strength training plan avoiding high-impact moves"
+    }
+   ],
+   "restrictions": [
+    {
+     "code": "no_high_exertion",
+     "quote": "Advised to avoid jumping and running until knee pain resolves."
+    }
+   ],
+   "other": [
+    {
+     "text": "Patellar tendinopathy diagnosed by physiotherapist",
+     "quote": "diagnosed as patellar tendinopathy by physiotherapist"
+    },
+    {
+     "text": "Physiotherapy exercises for knee",
+     "quote": "physiotherapy exercises for knee"
+    },
+    {
+     "text": "Earlier dinner at least 2 hours before bed",
+     "quote": "earlier dinner at least 2 hours before bed"
+    },
+    {
+     "text": "Protein intake below target",
+     "quote": "protein intake below target"
+    }
+   ]
+  }
+ },
+ {
+  "model": "openai/gpt-6-luna",
+  "pep": "arjun",
+  "flags": [],
+  "unresolved": [],
+  "raw": {
+   "critical_errors": [],
+   "critical_checks": 6,
+   "issue_recall": [
+    3,
+    3
+   ],
+   "intervention_recall": [
+    1,
+    1
+   ]
+  },
+  "after_checks": {
+   "critical_errors": [],
+   "critical_checks": 6,
+   "issue_recall": [
+    3,
+    3
+   ],
+   "intervention_recall": [
+    1,
+    1
+   ]
+  },
+  "profile": {
+   "language": "en",
+   "sex": "male",
+   "age": 24,
+   "life_stage": "none",
+   "diet_type": "veg",
+   "workout_setting": "gym",
+   "red_flags": [],
+   "issues": [
+    {
+     "code": "knee_pain",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "Right knee pain after running, diagnosed as patellar tendinopathy by physiotherapist"
+    },
+    {
+     "code": "muscle_soreness",
+     "status": "confirmed",
+     "severity": "mild",
+     "chronic": false,
+     "quote": "muscle soreness after workouts"
+    },
+    {
+     "code": "acid_reflux",
+     "status": "confirmed",
+     "severity": "mild",
+     "chronic": false,
+     "quote": "occasional acid reflux after late dinners"
+    }
+   ],
+   "tests": [],
+   "goals": [
+    {
+     "code": "muscle_gain",
+     "quote": "Muscle gain - wants to add 5 kg lean mass in 6 months"
+    }
+   ],
+   "interventions": [
+    {
+     "code": "strength_training_plan",
+     "quote": "Progressive strength training plan avoiding high-impact moves"
+    }
+   ],
+   "restrictions": [
+    {
+     "code": "no_high_exertion",
+     "quote": "Advised to avoid jumping and running until knee pain resolves."
+    }
+   ],
+   "other": [
+    {
+     "text": "Patellar tendinopathy",
+     "quote": "diagnosed as patellar tendinopathy by physiotherapist"
+    },
+    {
+     "text": "Earlier dinner at least 2 hours before bed",
+     "quote": "earlier dinner at least 2 hours before bed"
+    }
+   ]
+  }
+ },
+ {
+  "model": "openai/gpt-6-luna",
+  "pep": "priya",
+  "flags": [],
+  "unresolved": [],
+  "raw": {
+   "critical_errors": [],
+   "critical_checks": 6,
+   "issue_recall": [
+    4,
+    4
+   ],
+   "intervention_recall": [
+    1,
+    1
+   ]
+  },
+  "after_checks": {
+   "critical_errors": [],
+   "critical_checks": 6,
+   "issue_recall": [
+    4,
+    4
+   ],
+   "intervention_recall": [
+    1,
+    1
+   ]
+  },
+  "profile": {
+   "language": "ta",
+   "sex": "female",
+   "age": 31,
+   "life_stage": "pregnant",
+   "diet_type": "veg",
+   "workout_setting": "unknown",
+   "red_flags": [],
+   "issues": [
+    {
+     "code": "pregnancy_nausea",
+     "status": "confirmed",
+     "severity": "mild",
+     "chronic": false,
+     "quote": "morning nausea, improving"
+    },
+    {
+     "code": "constipation",
+     "status": "confirmed",
+     "severity": "mild",
+     "chronic": false,
+     "quote": "mild constipation"
+    },
+    {
+     "code": "anxiety",
+     "status": "confirmed",
+     "severity": "mild",
+     "chronic": false,
+     "quote": "anxiety about the pregnancy"
+    },
+    {
+     "code": "acid_reflux",
+     "status": "confirmed",
+     "severity": "mild",
+     "chronic": false,
+     "quote": "occasional heartburn"
+    }
+   ],
+   "tests": [
+    {
+     "code": "glucose_tolerance",
+     "status": "scheduled",
+     "result_summary": null,
+     "quote": "glucose tolerance test scheduled for next week as routine screening"
+    }
+   ],
+   "goals": [
+    {
+     "code": "healthy_pregnancy",
+     "quote": "Healthy pregnancy"
+    }
+   ],
+   "interventions": [
+    {
+     "code": "small_frequent_meals",
+     "quote": "Small frequent meals for nausea"
+    }
+   ],
+   "restrictions": [],
+   "other": [
+    {
+     "text": "Wants to stay active safely during pregnancy; walks for 20 minutes in the evening.",
+     "quote": "stay active safely"
+    },
+    {
+     "text": "Pregnancy-safe walking was prescribed.",
+     "quote": "pregnancy-safe walking"
+    }
+   ]
+  }
+ },
+ {
+  "model": "openai/gpt-6-luna",
+  "pep": "priya",
+  "flags": [],
+  "unresolved": [],
+  "raw": {
+   "critical_errors": [],
+   "critical_checks": 6,
+   "issue_recall": [
+    4,
+    4
+   ],
+   "intervention_recall": [
+    1,
+    1
+   ]
+  },
+  "after_checks": {
+   "critical_errors": [],
+   "critical_checks": 6,
+   "issue_recall": [
+    4,
+    4
+   ],
+   "intervention_recall": [
+    1,
+    1
+   ]
+  },
+  "profile": {
+   "language": "ta",
+   "sex": "female",
+   "age": 31,
+   "life_stage": "pregnant",
+   "diet_type": "veg",
+   "workout_setting": "unknown",
+   "red_flags": [],
+   "issues": [
+    {
+     "code": "pregnancy_nausea",
+     "status": "confirmed",
+     "severity": "mild",
+     "chronic": false,
+     "quote": "morning nausea, improving"
+    },
+    {
+     "code": "constipation",
+     "status": "confirmed",
+     "severity": "mild",
+     "chronic": false,
+     "quote": "mild constipation"
+    },
+    {
+     "code": "acid_reflux",
+     "status": "confirmed",
+     "severity": "mild",
+     "chronic": false,
+     "quote": "occasional heartburn"
+    },
+    {
+     "code": "anxiety",
+     "status": "confirmed",
+     "severity": "mild",
+     "chronic": false,
+     "quote": "anxiety about the pregnancy"
+    }
+   ],
+   "tests": [
+    {
+     "code": "glucose_tolerance",
+     "status": "scheduled",
+     "result_summary": null,
+     "quote": "glucose tolerance test scheduled for next week as routine screening"
+    }
+   ],
+   "goals": [
+    {
+     "code": "healthy_pregnancy",
+     "quote": "Healthy pregnancy"
+    }
+   ],
+   "interventions": [
+    {
+     "code": "small_frequent_meals",
+     "quote": "Small frequent meals for nausea"
+    }
+   ],
+   "restrictions": [],
+   "other": [
+    {
+     "text": "Pregnancy-safe walking",
+     "quote": "pregnancy-safe walking"
+    }
+   ]
+  }
+ },
+ {
+  "model": "openai/gpt-6-luna",
+  "pep": "ramesh",
+  "flags": [
+   {
+    "kind": "negation",
+    "code": "high_cholesterol",
+    "why": "quote is negated, status says confirmed"
+   }
+  ],
+  "unresolved": [],
+  "raw": {
+   "critical_errors": [
+    "high_cholesterol wrongly confirmed"
+   ],
+   "critical_checks": 8,
+   "issue_recall": [
+    3,
+    3
+   ],
+   "intervention_recall": [
+    3,
+    3
+   ]
+  },
+  "after_checks": {
+   "critical_errors": [],
+   "critical_checks": 8,
+   "issue_recall": [
+    3,
+    3
+   ],
+   "intervention_recall": [
+    3,
+    3
+   ]
+  },
+  "profile": {
+   "language": "hinglish",
+   "sex": "male",
+   "age": 52,
+   "life_stage": "none",
+   "diet_type": "veg",
+   "workout_setting": "unknown",
+   "red_flags": [],
+   "issues": [
+    {
+     "code": "type2_diabetes",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": true,
+     "quote": "Type 2 diabetes diagnosed 3 years ago"
+    },
+    {
+     "code": "hypertension",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": true,
+     "quote": "high blood pressure on medication"
+    },
+    {
+     "code": "high_cholesterol",
+     "status": "suspected",
+     "severity": "moderate",
+     "chronic": true,
+     "quote": "high cholesterol not checked recently"
+    },
+    {
+     "code": "overweight",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "overweight"
+    }
+   ],
+   "tests": [
+    {
+     "code": "hba1c",
+     "status": "results_received",
+     "result_summary": "8.1%",
+     "quote": "HbA1c results received last month: 8.1%"
+    },
+    {
+     "code": "lipid_panel",
+     "status": "advised",
+     "result_summary": null,
+     "quote": "lipid profile advised"
+    }
+   ],
+   "goals": [
+    {
+     "code": "glucose_control",
+     "quote": "Control blood sugar"
+    },
+    {
+     "code": "weight_loss",
+     "quote": "lose some weight"
+    }
+   ],
+   "interventions": [
+    {
+     "code": "walk_after_meals",
+     "quote": "10-minute walk after meals"
+    },
+    {
+     "code": "low_gi_diet",
+     "quote": "low-GI diet swaps"
+    },
+    {
+     "code": "salt_reduction",
+     "quote": "reduce salt"
+    }
+   ],
+   "restrictions": [
+    {
+     "code": "no_high_exertion",
+     "quote": "doctor advised to avoid strenuous exercise until BP is controlled"
+    }
+   ],
+   "other": [
+    {
+     "text": "Frequent sugar cravings",
+     "quote": "frequent sugar cravings"
+    },
+    {
+     "text": "Late dinners",
+     "quote": "late dinners"
+    },
+    {
+     "text": "Monitoring blood sugar at home",
+     "quote": "Monitoring sugar at home."
+    }
+   ]
+  }
+ },
+ {
+  "model": "openai/gpt-6-luna",
+  "pep": "ramesh",
+  "flags": [],
+  "unresolved": [],
+  "raw": {
+   "critical_errors": [],
+   "critical_checks": 8,
+   "issue_recall": [
+    3,
+    3
+   ],
+   "intervention_recall": [
+    3,
+    3
+   ]
+  },
+  "after_checks": {
+   "critical_errors": [],
+   "critical_checks": 8,
+   "issue_recall": [
+    3,
+    3
+   ],
+   "intervention_recall": [
+    3,
+    3
+   ]
+  },
+  "profile": {
+   "language": "hinglish",
+   "sex": "male",
+   "age": 52,
+   "life_stage": "none",
+   "diet_type": "veg",
+   "workout_setting": "unknown",
+   "red_flags": [],
+   "issues": [
+    {
+     "code": "type2_diabetes",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": true,
+     "quote": "Type 2 diabetes diagnosed 3 years ago"
+    },
+    {
+     "code": "hypertension",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": true,
+     "quote": "high blood pressure on medication"
+    },
+    {
+     "code": "high_cholesterol",
+     "status": "suspected",
+     "severity": "mild",
+     "chronic": false,
+     "quote": "high cholesterol not checked recently"
+    },
+    {
+     "code": "overweight",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "overweight"
+    }
+   ],
+   "tests": [
+    {
+     "code": "hba1c",
+     "status": "results_received",
+     "result_summary": "8.1%",
+     "quote": "HbA1c results received last month: 8.1%"
+    },
+    {
+     "code": "lipid_panel",
+     "status": "advised",
+     "result_summary": null,
+     "quote": "lipid profile advised"
+    }
+   ],
+   "goals": [
+    {
+     "code": "glucose_control",
+     "quote": "Control blood sugar"
+    },
+    {
+     "code": "weight_loss",
+     "quote": "lose some weight"
+    }
+   ],
+   "interventions": [
+    {
+     "code": "walk_after_meals",
+     "quote": "10-minute walk after meals"
+    },
+    {
+     "code": "low_gi_diet",
+     "quote": "low-GI diet swaps"
+    },
+    {
+     "code": "salt_reduction",
+     "quote": "reduce salt"
+    }
+   ],
+   "restrictions": [
+    {
+     "code": "no_high_exertion",
+     "quote": "doctor advised to avoid strenuous exercise until BP is controlled"
+    }
+   ],
+   "other": [
+    {
+     "text": "Frequent sugar cravings",
+     "quote": "frequent sugar cravings"
+    },
+    {
+     "text": "Monitors blood sugar at home",
+     "quote": "Monitoring sugar at home."
+    }
+   ]
+  }
+ },
+ {
+  "model": "openai/gpt-6-luna",
+  "pep": "neha",
+  "flags": [
+   {
+    "kind": "missed_red_flag",
+    "code": "suspected_cardiac",
+    "why": "'chest pain' in profile but no suspected_cardiac extracted"
+   }
+  ],
+  "unresolved": [],
+  "raw": {
+   "critical_errors": [],
+   "critical_checks": 4,
+   "issue_recall": [
+    2,
+    2
+   ],
+   "intervention_recall": [
+    0,
+    0
+   ]
+  },
+  "after_checks": {
+   "critical_errors": [],
+   "critical_checks": 4,
+   "issue_recall": [
+    2,
+    2
+   ],
+   "intervention_recall": [
+    0,
+    0
+   ]
+  },
+  "profile": {
+   "language": "en",
+   "sex": "female",
+   "age": 29,
+   "life_stage": "none",
+   "diet_type": "unknown",
+   "workout_setting": "unknown",
+   "red_flags": [],
+   "issues": [
+    {
+     "code": "stress",
+     "status": "confirmed",
+     "severity": "mild",
+     "chronic": false,
+     "quote": "Feels stressed at work"
+    },
+    {
+     "code": "insomnia",
+     "status": "confirmed",
+     "severity": "mild",
+     "chronic": false,
+     "quote": "trouble falling asleep some nights"
+    }
+   ],
+   "tests": [],
+   "goals": [],
+   "interventions": [],
+   "restrictions": [],
+   "other": []
+  }
+ },
+ {
+  "model": "openai/gpt-6-luna",
+  "pep": "neha",
+  "flags": [
+   {
+    "kind": "missed_red_flag",
+    "code": "suspected_cardiac",
+    "why": "'chest pain' in profile but no suspected_cardiac extracted"
+   }
+  ],
+  "unresolved": [],
+  "raw": {
+   "critical_errors": [],
+   "critical_checks": 4,
+   "issue_recall": [
+    2,
+    2
+   ],
+   "intervention_recall": [
+    0,
+    0
+   ]
+  },
+  "after_checks": {
+   "critical_errors": [],
+   "critical_checks": 4,
+   "issue_recall": [
+    2,
+    2
+   ],
+   "intervention_recall": [
+    0,
+    0
+   ]
+  },
+  "profile": {
+   "language": "en",
+   "sex": "female",
+   "age": 29,
+   "life_stage": "none",
+   "diet_type": "unknown",
+   "workout_setting": "unknown",
+   "red_flags": [],
+   "issues": [
+    {
+     "code": "stress",
+     "status": "confirmed",
+     "severity": "mild",
+     "chronic": false,
+     "quote": "Feels stressed at work"
+    },
+    {
+     "code": "insomnia",
+     "status": "confirmed",
+     "severity": "mild",
+     "chronic": false,
+     "quote": "trouble falling asleep some nights"
+    }
+   ],
+   "tests": [],
+   "goals": [],
+   "interventions": [],
+   "restrictions": [],
+   "other": []
+  }
+ }
+]

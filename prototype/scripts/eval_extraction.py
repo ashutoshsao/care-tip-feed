@@ -14,9 +14,9 @@ sys.path.insert(0, str(ROOT))
 from feed.extract import code_checks, extract, verify
 from feed.llm import PRICES, USAGE, cost
 
-MODELS = ["anthropic/claude-haiku-5.5", "deepseek/deepseek-v4.1-flash", "google/gemini-3.8-flash"]
+MODELS = ["anthropic/claude-haiku-5.5", "google/gemini-3.8-flash", "openai/gpt-6-luna"]
 VERIFIER = {"anthropic": "google/gemini-3.8-flash", "deepseek": "anthropic/claude-haiku-5.5",
-            "google": "anthropic/claude-haiku-5.5"}   # different family from the extractor
+            "google": "anthropic/claude-haiku-5.5", "openai": "anthropic/claude-haiku-5.5"}   # different family from the extractor
 PEPS = ["reema_v1", "reema_v2", "arjun", "priya", "ramesh", "neha"]
 GOLD = json.loads((ROOT / "data" / "gold.json").read_text())
 

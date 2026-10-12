@@ -21,6 +21,7 @@ PRICES = {
     "deepseek/deepseek-v4.1-flash": (0.30, 1.20),
     "google/gemini-3.8-flash": (0.75, 3.75),
     "google/gemini-3.1-pro-preview": (2.00, 12.00),
+    "openai/gpt-6-luna": (0.10, 0.50),
 }
 
 USAGE: dict[str, dict] = {}
@@ -58,7 +59,7 @@ def chat_json(model: str, system: str, user: str, schema: dict, name: str = "out
         "provider": {"require_parameters": True},
         "max_tokens": max_tokens,
     }
-    if not model.startswith("anthropic/"):   # Claude 5.x endpoints reject temperature
+    if not model.startswith(("anthropic/", "openai/")):   # Claude 5.x / GPT-6 endpoints reject temperature
         body["temperature"] = temperature
     headers = {"Authorization": f"Bearer {os.environ['OPENROUTER_API_KEY']}"}
     last = None
