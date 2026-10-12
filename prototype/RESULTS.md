@@ -29,6 +29,18 @@ a sensitive tip in backfill). Fixed → 6/6.
 - Correct answers cross-checked by Gemini 3.1 Pro + GPT-6.1 Sol (blind), majority rule → 5/6 profiles full agreement.
 - The code tripwire false-alarmed on "screened for chest pain: none"; the LLM check cleared it — layering works.
 
+## 2b. Embeddings (`scripts/eval_embeddings.py`, local, no API cost)
+
+16 real English phrases from the test profiles, matched against 106 tips. Hit = a tip about that issue in the top 5.
+
+| Model | English → Hindi tips | English → English tips |
+|---|---|---|
+| qwen3-embedding:0.6b (used) | 81% | **94%** |
+| bge-m3 | 81% (better rank, MRR 0.75 vs 0.67) | 88% |
+
+Crossing languages costs 7–13 points for both models → evidence for D1 (match on the English description, serve the
+Hindi video). Qwen is best for English matching, which is how the pipeline uses it. Small test: direction, not precision.
+
 ## 3. Reema's feed today (v1)
 
 1. 📌 Chest pain? Get checked now — red flag active
