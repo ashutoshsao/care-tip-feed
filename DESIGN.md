@@ -5,7 +5,7 @@ from a library of thousands, using the user's Patient Executive Profile (PEP), a
 health profile. Hundreds of thousands of users, many Indian languages, a health product where a wrong tip can hurt.
 
 **Answer in one line:** an LLM reads the profile only when it changes; everything that runs daily is plain code
-and lookups — a hard safety filter, then ranking by severity — and a prototype shows it shows **0 unsafe tips vs
+and lookups — a hard safety filter, then ranking by severity. In a prototype it showed **0 unsafe tips vs
 ~19 for random or embedding-only feeds**, at 82% relevance.
 
 ---
@@ -30,7 +30,7 @@ or a Tamil-only video. A Kegel tip is shown discreetly (tap to play, neutral tit
 ## 2. Architecture
 
 ```
-WHEN THE PROFILE CHANGES  (nightly batch; a new red flag takes a fast path)
+WHEN THE PROFILE CHANGES  (nightly batch; a red flag raised in chat/call takes a fast path)
  1. LLM extracts a structured profile: coded issues + status + severity, red flags, tests, prescriptions,
     restrictions — each fact with a verbatim quote from the PEP
  2. Checks: code first (quote exists? words fit status? proof for "results received"? danger words missed?
@@ -42,16 +42,14 @@ EVERY DAY, FOR EVERYONE  (no LLM)
  4. Find tips: exact codes → clinician-reviewed synonym map → embeddings only for leftovers
  5. Safety filter (code): contraindications × red flags, diagnosis lock, clinician restrictions, review status,
     sex/age/pregnancy, diet, language
- 6. Rank: severity + recency → top 5 = pinned safety tip (if a red flag) + most severe issue ×2
-    + 1 prescribed + 1 rotating issue (the pin counts inside the five)
+ 6. Rank: severity + recency → the top 5 slots (rule in D8, example in §1)
  7. Engagement picks which video fills a slot (never what issue)
  8. Repeat rules → today's feed
 
 OFFLINE: embed new tips once · LLM drafts vocabulary additions → clinicians review · check each language version
 ```
 
-**What extraction returns** (a slice of Reema's real output; the full profile also has language, age, all issues,
-prescriptions and restrictions):
+**What extraction returns** (a slice of Reema's real output; full version in Appendix B):
 
 ```json
 {
@@ -61,9 +59,6 @@ prescriptions and restrictions):
                   "quote": "to be completed this week" }]
 }
 ```
-
-Code checks every fact: is the quote really in the profile, do its words fit the status ("to be completed" can't be
-"results received")? Note what's absent: no hypothyroidism, because the profile says no tests were done.
 
 **LLM vs embeddings vs rules**
 
@@ -111,9 +106,8 @@ Code checks every fact: is the quote really in the profile, do its words fit the
   "cleared for moderate exercise" not treated as a limit, shift-work tips for day workers…). Fixed → 6/6.
 
 **Extraction models** (84 safety-critical checks): Haiku 5.5 0 errors; GPT-6 Luna 1 error, caught by the
-negation check; Gemini 3.8 Flash 0 errors at 5× the cost; DeepSeek dropped for invalid output. After the blind
-cross-check refined the answers, all models shared one miss: "reduce salt" coded as a habit, not a restriction —
-a vocabulary overlap (two codes for one idea), with no safety impact.
+negation check; Gemini 3.8 Flash 0 errors at 5× the cost; DeepSeek dropped for invalid output. All models shared
+one later miss, a vocabulary overlap with no safety impact (lesson 5 below).
 
 **After launch:** system health (flag rates, review queue), weekly clinician audit of sampled feeds, user
 response normalized per user (completion, dislikes), and the real outcome — do users follow their care plan?
@@ -126,7 +120,7 @@ A/B test against the current feed with a small randomized slice. Never optimize 
 3. Content depth limits the feed: Reema exhausts all 10 period tips by day 5; a Tamil user gets 1 tip.
    The system logs both as content demand.
 4. Independent judges catch what code can't — worth running on every change.
-5. One concept, one code: overlapping vocabulary codes split models and annotators.
+5. One concept, one code: "reduce salt" fit two codes (habit vs restriction), and models and annotators split.
 
 ## 7. Limits and open questions
 
