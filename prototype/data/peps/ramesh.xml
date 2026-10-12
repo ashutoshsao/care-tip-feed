@@ -1,0 +1,18 @@
+<PatientProfile>
+  <Name>Ramesh</Name>
+  <Age>52</Age>
+  <Gender>Male</Gender>
+  <Language>hinglish</Language>
+  <SocioCulturalContext>Male; shop owner in Lucknow; lives with family</SocioCulturalContext>
+  <Personality>Busy; prefers short practical advice</Personality>
+  <FitnessGoals>Control blood sugar; lose some weight</FitnessGoals>
+  <MedicalProfile>Type 2 diabetes diagnosed 3 years ago; HbA1c results received last month: 8.1%; high blood pressure on medication; high cholesterol not checked recently (lipid profile advised); frequent sugar cravings; overweight</MedicalProfile>
+  <SexualWellnessProfile></SexualWellnessProfile>
+  <AddictionProfile>Quit smoking 5 years ago</AddictionProfile>
+  <DailyRoutine>Shop 10 AM - 9 PM; late dinner</DailyRoutine>
+  <FoodPreferences>Vegetarian; loves sweets; eats white rice daily</FoodPreferences>
+  <FitnessRoutine>No regular exercise</FitnessRoutine>
+  <LifestyleProblems>High sugar intake; sedentary; late dinners; weight gain</LifestyleProblems>
+  <PrescribedInterventions>10-minute walk after meals; low-GI diet swaps; reduce salt; doctor advised to avoid strenuous exercise until BP is controlled; lipid profile test advised</PrescribedInterventions>
+  <AdditionalComments>Monitoring sugar at home.</AdditionalComments>
+</PatientProfile>

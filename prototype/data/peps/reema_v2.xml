@@ -1,0 +1,18 @@
+<PatientProfile>
+  <Name>Reema</Name>
+  <Age>27</Age>
+  <Gender>Female</Gender>
+  <Language>hindi</Language>
+  <SocioCulturalContext>Female; back in the city; has one child</SocioCulturalContext>
+  <Personality>Agreeable; flexible with meal timings</Personality>
+  <FitnessGoals>Weight Loss - at least 10 kg; no specific timeline stated</FitnessGoals>
+  <MedicalProfile>Period irregularities - cycle length varies, sometimes 8 days off; bleeding duration reduced from 5-6 days to 2 days; severe menstrual pain; fatigue; erratic sleep cycle due to night shifts; chronic lower back pain; leg swelling (worse at night), improving with leg elevation; blood test results received: Vitamin D 12 ng/mL (deficient), haemoglobin 10.6 g/dL with low ferritin (iron deficiency confirmed), TSH 2.1 (thyroid normal, hypothyroidism ruled out); chest pain evaluated by cardiologist - ECG and echo normal, pain found to be musculoskeletal, cleared for moderate exercise</MedicalProfile>
+  <SexualWellnessProfile>Vaginal laxity (post-delivery); doing Kegel exercises</SexualWellnessProfile>
+  <AddictionProfile></AddictionProfile>
+  <DailyRoutine>Night shifts continue; now following 8 AM - 3 PM sleep block most days</DailyRoutine>
+  <FoodPreferences>Eats typical home food; non-vegetarian occasionally; no food allergies</FoodPreferences>
+  <FitnessRoutine>Home-based workouts; mat, wall, chair; 25-minute modules</FitnessRoutine>
+  <LifestyleProblems>High stress level; night shift work disrupting circadian rhythm; weight loss goal of at least 10 kg; lower back pain; vaginal laxity (post-delivery)</LifestyleProblems>
+  <PrescribedInterventions>Vitamin D supplementation as advised by doctor; iron-rich diet and iron supplements; warm ginger-turmeric drink daily; fixed sleep block (8 AM - 3 PM with blackout curtains); 7-day meal plan aligned with night shift schedule; Kegel exercises (10 reps, 3x daily); leg elevation in the evening</PrescribedInterventions>
+  <AdditionalComments>Cardiac concern cleared after evaluation. Blood test results discussed on call yesterday.</AdditionalComments>
+</PatientProfile>

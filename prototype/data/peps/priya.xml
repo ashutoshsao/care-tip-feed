@@ -1,0 +1,18 @@
+<PatientProfile>
+  <Name>Priya</Name>
+  <Age>31</Age>
+  <Gender>Female</Gender>
+  <Language>tamil</Language>
+  <SocioCulturalContext>Female; 20 weeks pregnant with first child; lives with husband and in-laws in Chennai</SocioCulturalContext>
+  <Personality>Anxious about pregnancy; asks many questions</Personality>
+  <FitnessGoals>Healthy pregnancy; stay active safely</FitnessGoals>
+  <MedicalProfile>Pregnant (20 weeks); morning nausea, improving; mild constipation; no bleeding; no history of diabetes; glucose tolerance test scheduled for next week as routine screening; occasional heartburn</MedicalProfile>
+  <SexualWellnessProfile></SexualWellnessProfile>
+  <AddictionProfile>None</AddictionProfile>
+  <DailyRoutine>Works from home; walks in the evening</DailyRoutine>
+  <FoodPreferences>Vegetarian; South Indian home food</FoodPreferences>
+  <FitnessRoutine>Evening walks 20 minutes</FitnessRoutine>
+  <LifestyleProblems>Nausea; constipation; anxiety about the pregnancy</LifestyleProblems>
+  <PrescribedInterventions>Small frequent meals for nausea; pregnancy-safe walking; glucose tolerance test next week</PrescribedInterventions>
+  <AdditionalComments>Obstetrician follow-up after GTT.</AdditionalComments>
+</PatientProfile>

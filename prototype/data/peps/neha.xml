@@ -1,0 +1,18 @@
+<PatientProfile>
+  <Name>Neha</Name>
+  <Age>29</Age>
+  <Gender>Female</Gender>
+  <Language>english</Language>
+  <SocioCulturalContext>Female; marketing professional; Mumbai</SocioCulturalContext>
+  <Personality></Personality>
+  <FitnessGoals></FitnessGoals>
+  <MedicalProfile>Feels stressed at work; trouble falling asleep some nights; no other health issues reported; screened for chest pain, pregnancy, and bleeding - none</MedicalProfile>
+  <SexualWellnessProfile></SexualWellnessProfile>
+  <AddictionProfile></AddictionProfile>
+  <DailyRoutine></DailyRoutine>
+  <FoodPreferences></FoodPreferences>
+  <FitnessRoutine></FitnessRoutine>
+  <LifestyleProblems>Work stress; occasional poor sleep</LifestyleProblems>
+  <PrescribedInterventions></PrescribedInterventions>
+  <AdditionalComments>New user; first conversation.</AdditionalComments>
+</PatientProfile>

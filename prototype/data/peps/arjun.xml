@@ -1,0 +1,18 @@
+<PatientProfile>
+  <Name>Arjun</Name>
+  <Age>24</Age>
+  <Gender>Male</Gender>
+  <Language>english</Language>
+  <SocioCulturalContext>Male; software engineer; lives alone in Bengaluru</SocioCulturalContext>
+  <Personality>Disciplined; data-driven</Personality>
+  <FitnessGoals>Muscle gain - wants to add 5 kg lean mass in 6 months</FitnessGoals>
+  <MedicalProfile>Right knee pain after running, diagnosed as patellar tendinopathy by physiotherapist; muscle soreness after workouts; no history of heart problems; no chest pain; family history of type 2 diabetes (father); occasional acid reflux after late dinners</MedicalProfile>
+  <SexualWellnessProfile></SexualWellnessProfile>
+  <AddictionProfile>None</AddictionProfile>
+  <DailyRoutine>Works 10 AM - 7 PM; gym at 8 PM; sleeps at midnight</DailyRoutine>
+  <FoodPreferences>Strict vegetarian; eats paneer, dal, curd; wants high-protein vegetarian options; late dinners</FoodPreferences>
+  <FitnessRoutine>Gym 5 days a week; weight training; stopped running due to knee pain</FitnessRoutine>
+  <LifestyleProblems>Knee pain limiting leg workouts; acid reflux after late meals; protein intake below target</LifestyleProblems>
+  <PrescribedInterventions>Progressive strength training plan avoiding high-impact moves; physiotherapy exercises for knee; earlier dinner at least 2 hours before bed</PrescribedInterventions>
+  <AdditionalComments>Advised to avoid jumping and running until knee pain resolves.</AdditionalComments>
+</PatientProfile>
