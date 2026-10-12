@@ -5,3 +5,4 @@ __pycache__/
 .pytest_cache/
 prototype/data/embed_cache/
 prototype/data/library.raw.json
+.DS_Store
