@@ -44,6 +44,7 @@ class Tip(BaseModel):
     requires_confirmed_diagnosis: Optional[str] = None   # D5
     sensitive: bool = False                  # D6
     is_reinforcement_for_flag: Optional[str] = None      # D4 pinned tip
+    prep_for_test: Optional[str] = None                  # shown only while that test is pending
     # clinical governance
     review_status: Literal["approved", "pending", "expired"] = "approved"
     evidence_level: Literal["A", "B", "C", "D"] = "B"

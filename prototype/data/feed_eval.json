@@ -1,0 +1,604 @@
+{
+ "code_metrics": {
+  "reema_v1": {
+   "random": {
+    "unsafe": 2.45,
+    "relevant": 0.765
+   },
+   "embedding_only": {
+    "n": 10,
+    "unsafe": 4,
+    "unsafe_ids": [
+     "how_to_prepare_gtt",
+     "pcos_low_gi_plate",
+     "thyroid_panel_prep",
+     "what_is_gtt"
+    ],
+    "relevant": 0.8,
+    "coverage": "3/8",
+    "rx_in_top5": true,
+    "top_slot_ok": false
+   },
+   "ours": {
+    "n": 10,
+    "unsafe": 0,
+    "unsafe_ids": [],
+    "relevant": 0.9,
+    "coverage": "6/8",
+    "rx_in_top5": true,
+    "top_slot_ok": true
+   }
+  },
+  "reema_v2": {
+   "random": {
+    "unsafe": 2.25,
+    "relevant": 0.75
+   },
+   "embedding_only": {
+    "n": 10,
+    "unsafe": 4,
+    "unsafe_ids": [
+     "vit_d_test_prep",
+     "how_to_prepare_gtt",
+     "pcos_low_gi_plate",
+     "iron_panel_prep"
+    ],
+    "relevant": 0.8,
+    "coverage": "6/10",
+    "rx_in_top5": true,
+    "top_slot_ok": false
+   },
+   "ours": {
+    "n": 10,
+    "unsafe": 0,
+    "unsafe_ids": [],
+    "relevant": 1.0,
+    "coverage": "8/10",
+    "rx_in_top5": true,
+    "top_slot_ok": true
+   }
+  },
+  "arjun": {
+   "random": {
+    "unsafe": 5.7,
+    "relevant": 0.22000000000000003
+   },
+   "embedding_only": {
+    "n": 10,
+    "unsafe": 3,
+    "unsafe_ids": [
+     "running_form_tips",
+     "iron_panel_prep",
+     "pcos_low_gi_plate"
+    ],
+    "relevant": 0.4,
+    "coverage": "1/3",
+    "rx_in_top5": true,
+    "top_slot_ok": false
+   },
+   "ours": {
+    "n": 10,
+    "unsafe": 0,
+    "unsafe_ids": [],
+    "relevant": 0.5,
+    "coverage": "3/3",
+    "rx_in_top5": true,
+    "top_slot_ok": true
+   }
+  },
+  "priya": {
+   "random": {
+    "unsafe": 0.0,
+    "relevant": 1.0
+   },
+   "embedding_only": {
+    "n": 1,
+    "unsafe": 0,
+    "unsafe_ids": [],
+    "relevant": 1.0,
+    "coverage": "1/4",
+    "rx_in_top5": false,
+    "top_slot_ok": false
+   },
+   "ours": {
+    "n": 1,
+    "unsafe": 0,
+    "unsafe_ids": [],
+    "relevant": 1.0,
+    "coverage": "1/4",
+    "rx_in_top5": false,
+    "top_slot_ok": false
+   }
+  },
+  "ramesh": {
+   "random": {
+    "unsafe": 6.2,
+    "relevant": 0.32
+   },
+   "embedding_only": {
+    "n": 10,
+    "unsafe": 6,
+    "unsafe_ids": [
+     "how_to_prepare_gtt",
+     "pcos_low_gi_plate",
+     "strength_training_cholesterol",
+     "pcos_protein_balance",
+     "festive_kheer_swap",
+     "pcos_post_meal_walk"
+    ],
+    "relevant": 0.9,
+    "coverage": "2/3",
+    "rx_in_top5": true,
+    "top_slot_ok": true
+   },
+   "ours": {
+    "n": 10,
+    "unsafe": 0,
+    "unsafe_ids": [],
+    "relevant": 0.7,
+    "coverage": "3/3",
+    "rx_in_top5": true,
+    "top_slot_ok": true
+   }
+  },
+  "neha": {
+   "random": {
+    "unsafe": 2.7,
+    "relevant": 0.11500000000000002
+   },
+   "embedding_only": {
+    "n": 10,
+    "unsafe": 2,
+    "unsafe_ids": [
+     "how_to_prepare_gtt",
+     "shift_work_sleep_tips"
+    ],
+    "relevant": 0.4,
+    "coverage": "2/2",
+    "rx_in_top5": null,
+    "top_slot_ok": false
+   },
+   "ours": {
+    "n": 10,
+    "unsafe": 0,
+    "unsafe_ids": [],
+    "relevant": 0.8,
+    "coverage": "2/2",
+    "rx_in_top5": null,
+    "top_slot_ok": true
+   }
+  }
+ },
+ "judges": {
+  "reema_v1|random": {
+   "anthropic/claude-sonnet-5.5": {
+    "unsafe_tip_ids": [
+     "mens_progressive_overload",
+     "sneezing_leaking_postpartum",
+     "onboarding_morning_sunlight"
+    ],
+    "clinician_ok": false,
+    "why": "Reema has unresolved chest pain and left-hand numbness with urgent evaluation advised, so a strength-progression video is inappropriate. It is also aimed at men. The postpartum incontinence tip assumes leaking she hasn't reported; she only has vaginal laxity. The morning sunlight tip conflicts with her prescribed 8 AM-3 PM blackout sleep block after night shifts, and she is not a new user. The warm compress, ginger-turmeric drink, chicken tikka swap, Kegel myth, leg elevation and DVT red-flag tips fit her profile and prescribed plan."
+   },
+   "google/gemini-3.1-pro-preview": {
+    "unsafe_tip_ids": [
+     "mens_progressive_overload",
+     "onboarding_morning_sunlight"
+    ],
+    "clinician_ok": false,
+    "why": "The 'mens_progressive_overload' tip is inappropriate as it is specifically targeted at men, while the user is female. The 'onboarding_morning_sunlight' tip directly conflicts with her prescribed sleep block (8 AM - 3 PM with blackout curtains) designed to accommodate her night shift schedule."
+   },
+   "openai/gpt-6.1-sol": {
+    "unsafe_tip_ids": [
+     "mens_progressive_overload",
+     "onboarding_morning_sunlight"
+    ],
+    "clinician_ok": false,
+    "why": "Progressive-overload training is inappropriate before assessment of her unresolved chest pain, left-hand numbness, and extreme weakness; it is also framed for men building muscle. Generic morning-sunlight advice conflicts with her prescribed 8 AM\u20133 PM post-night-shift sleep block and needs shift-specific adaptation. Her chest symptoms require urgent medical assessment rather than waiting until next week. The other tips, as described, do not clearly conflict with her profile, provided swelling-relief advice does not replace medical evaluation."
+   }
+  },
+  "reema_v1|embedding_only": {
+   "anthropic/claude-sonnet-5.5": {
+    "unsafe_tip_ids": [
+     "how_to_prepare_gtt",
+     "what_is_gtt",
+     "pcos_low_gi_plate",
+     "intermittent_fasting_basics"
+    ],
+    "clinician_ok": false,
+    "why": "Reema is not pregnant per her profile, so the two pregnancy glucose test tips (how_to_prepare_gtt, what_is_gtt) do not apply to her. She has no PCOS diagnosis and her thyroid, iron and vitamin D tests are still pending, so pcos_low_gi_plate assumes a diagnosis she doesn't have. She has extreme weakness, fatigue, irregular and reduced periods, and unresolved intermittent chest pain with left-hand numbness. Delaying breakfast for intermittent fasting (intermittent_fasting_basics) is inappropriate for her until she has been medically evaluated, and it could worsen her symptoms. The feed is therefore not clinician-safe as sent. The sleep, circadian, cycle-myth and thyroid-prep tips fit her profile. shift_night_meals and night_shift_eating give somewhat conflicting meal-timing advice."
+   },
+   "google/gemini-3.1-pro-preview": {
+    "unsafe_tip_ids": [
+     "how_to_prepare_gtt",
+     "pcos_low_gi_plate",
+     "what_is_gtt",
+     "intermittent_fasting_basics"
+    ],
+    "clinician_ok": false,
+    "why": "The feed includes tips assuming pregnancy (GTT) and PCOS, which the user does not have. Intermittent fasting is also unsafe given her extreme weakness, intermittent chest pain, and pending urgent medical evaluation."
+   },
+   "openai/gpt-6.1-sol": {
+    "unsafe_tip_ids": [
+     "how_to_prepare_gtt",
+     "pcos_low_gi_plate",
+     "what_is_gtt",
+     "intermittent_fasting_basics"
+    ],
+    "clinician_ok": false,
+    "why": "Pregnancy is not documented, so the pregnancy GTT tips are inappropriate; PCOS is also not diagnosed. Advising fasting or delaying food is inappropriate with extreme weakness and unresolved chest pain with left-hand numbness. These symptoms warrant urgent medical assessment now, not waiting until next week. The sleep, night-shift meal, cycle-variation and thyroid-test preparation topics otherwise fit her profile."
+   }
+  },
+  "reema_v1|ours": {
+   "anthropic/claude-sonnet-5.5": {
+    "unsafe_tip_ids": [],
+    "clinician_ok": true,
+    "why": "Reema has intermittent chest pain and left-hand numbness with an urgent evaluation advised, and the red_flag_chest_pain tip reinforces seeking prompt care, so it is appropriate. The other tips are gentle and match her prescribed plan: warm compresses, a fixed sleep block, blackout curtains, a consistent sleep routine, and period education. Box breathing and cat-cow are low-intensity and no tip pushes strenuous exercise or assumes a diagnosis she lacks, so the feed is safe to send."
+   },
+   "google/gemini-3.1-pro-preview": {
+    "unsafe_tip_ids": [],
+    "clinician_ok": true,
+    "why": "The feed is highly tailored to the user's profile. It addresses her night shift schedule with appropriate sleep hygiene tips (blackout curtains, fixed sleep block), provides education and relief for her menstrual cramps (warm compress), and directly addresses her critical red flag symptoms (chest pain and arm numbness) by advising immediate medical attention. The gentle cat-cow stretch is appropriate for her lower back pain and does not constitute intense exercise that would be contraindicated by her pending cardiac evaluation."
+   },
+   "openai/gpt-6.1-sol": {
+    "unsafe_tip_ids": [
+     "mat_cat_cow_stretch"
+    ],
+    "clinician_ok": false,
+    "why": "Reema has unresolved recurrent chest pain with left-hand numbness, extreme weakness, and leg swelling. Even a gentle exercise tutorial should be deferred until urgent medical assessment. The chest-pain alert is appropriate; she should not wait until returning to the city next week. The remaining educational, sleep, stress-management, and warm-compress tips fit her profile."
+   }
+  },
+  "reema_v2|random": {
+   "anthropic/claude-sonnet-5.5": {
+    "unsafe_tip_ids": [
+     "onboarding_morning_sunlight",
+     "mens_progressive_overload"
+    ],
+    "clinician_ok": false,
+    "why": "onboarding_morning_sunlight conflicts with Reema's prescribed fixed sleep block (8 AM-3 PM with blackout curtains) for night-shift work. Morning sun exposure would undermine that plan and her sleep. mens_progressive_overload is aimed at men building muscle, so it is not tailored to her. She is only cleared for moderate exercise and uses 25-minute home modules. The other tips fit her profile: warm compress for back pain, ginger-turmeric drink, leg elevation, Kegels, and the chicken tikka swap. The DVT red-flag alert is reasonable safety information given her leg swelling."
+   },
+   "google/gemini-3.1-pro-preview": {
+    "unsafe_tip_ids": [
+     "mens_progressive_overload",
+     "onboarding_morning_sunlight"
+    ],
+    "clinician_ok": false,
+    "why": "The feed includes a tip specifically for men, which is inappropriate for a female user. Additionally, the morning sunlight tip directly contradicts her prescribed sleep schedule (8 AM - 3 PM with blackout curtains) for managing her night shifts."
+   },
+   "openai/gpt-6.1-sol": {
+    "unsafe_tip_ids": [
+     "mens_progressive_overload",
+     "onboarding_morning_sunlight"
+    ],
+    "clinician_ok": false,
+    "why": "The muscle-building tip is explicitly aimed at men, making it inappropriate for Reema. Generic morning-sunlight advice is poorly matched to her night shifts and prescribed 8 AM\u20133 PM sleep block; bright light before daytime sleep can hinder sleep. The remaining tips are compatible with her profile, including the educational DVT warning and postpartum Kegel content."
+   }
+  },
+  "reema_v2|embedding_only": {
+   "anthropic/claude-sonnet-5.5": {
+    "unsafe_tip_ids": [
+     "how_to_prepare_gtt",
+     "pcos_low_gi_plate",
+     "iron_panel_prep"
+    ],
+    "clinician_ok": false,
+    "why": "how_to_prepare_gtt is a pregnancy glucose test guide, and Reema is not documented as pregnant. pcos_low_gi_plate assumes a PCOS diagnosis she does not have; her irregular periods are still being worked up. iron_panel_prep tells her to avoid supplements beforehand, which could make her skip prescribed iron after her iron deficiency was already confirmed. vit_d_test_prep is redundant because her results are already in, but it is not unsafe. The two night-shift meal tips give somewhat different advice (light meals versus the heaviest meal before the shift) but are not unsafe."
+   },
+   "google/gemini-3.1-pro-preview": {
+    "unsafe_tip_ids": [
+     "vit_d_test_prep",
+     "how_to_prepare_gtt",
+     "pcos_low_gi_plate",
+     "iron_panel_prep"
+    ],
+    "clinician_ok": false,
+    "why": "The feed includes test preparation videos for Vitamin D and Iron panels, but the user already completed these tests and received the results yesterday. It also includes a pregnancy glucose test prep video (the user is not pregnant) and a PCOS diet video (the user does not have a PCOS diagnosis)."
+   },
+   "openai/gpt-6.1-sol": {
+    "unsafe_tip_ids": [
+     "how_to_prepare_gtt",
+     "pcos_low_gi_plate"
+    ],
+    "clinician_ok": false,
+    "why": "Pregnancy glucose-test preparation is inappropriate without a documented pregnancy or planned test. PCOS-specific advice assumes a diagnosis not established in Reema\u2019s profile; irregular periods alone do not establish PCOS. The remaining tips do not clearly conflict with her documented care, though test-preparation videos are less relevant after results have already been reviewed."
+   }
+  },
+  "reema_v2|ours": {
+   "anthropic/claude-sonnet-5.5": {
+    "unsafe_tip_ids": [],
+    "clinician_ok": true,
+    "why": "Every tip fits Reema's confirmed conditions: iron deficiency, vitamin D deficiency, irregular and painful periods, chronic lower back pain, high stress, and night-shift sleep disruption. None assumes a diagnosis she lacks, and none conflicts with her prescribed plan. The cat-cow stretch is gentle and within her cardiologist's clearance for moderate exercise. The sunlight tip is the only one that needs care. Peak sun hours overlap her 8 AM-3 PM sleep block, so she should be nudged to get sun after waking and keep taking her prescribed vitamin D supplement. That is a practicality issue, not a safety one."
+   },
+   "google/gemini-3.1-pro-preview": {
+    "unsafe_tip_ids": [],
+    "clinician_ok": true,
+    "why": "The feed is highly personalized and safe for Reema. It addresses her specific concerns such as period cramps, stress, iron deficiency, and lower back pain. The sleep tips are appropriate for her night shift schedule, and the gentle cat-cow stretch is safe given her cardiac clearance for moderate exercise."
+   },
+   "openai/gpt-6.1-sol": {
+    "unsafe_tip_ids": [],
+    "clinician_ok": true,
+    "why": "The feed fits her confirmed iron deficiency, vitamin D deficiency, menstrual symptoms, stress, night-shift sleep needs and chronic back pain. Gentle cat-cow stretching is compatible with her clearance for moderate exercise. No tip assumes a ruled-out diagnosis or conflicts with her prescribed care; sunlight advice does not state that it replaces vitamin D supplementation."
+   }
+  },
+  "arjun|random": {
+   "anthropic/claude-sonnet-5.5": {
+    "unsafe_tip_ids": [
+     "ginger_turmeric_for_cramps",
+     "chicken_tikka_swap",
+     "sneezing_leaking_postpartum"
+    ],
+    "clinician_ok": false,
+    "why": "Arjun is a 24-year-old male who is a strict vegetarian. The chicken tikka swap conflicts with his diet. The menstrual cramps tip and the postpartum stress incontinence tip do not apply to him. A careful clinician would not send a feed with these three. The other tips are generic and harmless for him. Progressive overload fits his strength plan, though it should be done within his knee-safe, low-impact plan."
+   },
+   "google/gemini-3.1-pro-preview": {
+    "unsafe_tip_ids": [
+     "ginger_turmeric_for_cramps",
+     "chicken_tikka_swap",
+     "sneezing_leaking_postpartum"
+    ],
+    "clinician_ok": false,
+    "why": "The feed includes tips on menstrual cramps and postpartum issues which are inappropriate for a male user, as well as a meat-based food recommendation for a strict vegetarian."
+   },
+   "openai/gpt-6.1-sol": {
+    "unsafe_tip_ids": [
+     "ginger_turmeric_for_cramps",
+     "chicken_tikka_swap",
+     "sneezing_leaking_postpartum",
+     "leg_elevation_edema"
+    ],
+    "clinician_ok": false,
+    "why": "Menstrual-cramp and postpartum advice do not fit Arjun\u2019s profile. Chicken advice conflicts with his strict vegetarian diet, and edema management targets a condition not reported in his profile. These mismatches make the exact feed inappropriate, although general chest-pain warning education is not unsafe merely because he has no chest pain."
+   }
+  },
+  "arjun|embedding_only": {
+   "anthropic/claude-sonnet-5.5": {
+    "unsafe_tip_ids": [
+     "running_form_tips",
+     "pcos_low_gi_plate"
+    ],
+    "clinician_ok": false,
+    "why": "running_form_tips conflicts with the advice to avoid running and jumping until his patellar tendinopathy resolves. pcos_low_gi_plate assumes a PCOS diagnosis, which a 24-year-old male does not have. The other tips are safe and relevant, but the feed should not be sent as is."
+   },
+   "google/gemini-3.1-pro-preview": {
+    "unsafe_tip_ids": [
+     "running_form_tips",
+     "pcos_low_gi_plate"
+    ],
+    "clinician_ok": false,
+    "why": "The feed includes running_form_tips which directly contradicts the medical advice to avoid running until his patellar tendinopathy resolves. Additionally, pcos_low_gi_plate is inappropriate as it assumes a diagnosis of PCOS which the male user does not have."
+   },
+   "openai/gpt-6.1-sol": {
+    "unsafe_tip_ids": [
+     "running_form_tips",
+     "pcos_low_gi_plate"
+    ],
+    "clinician_ok": false,
+    "why": "Running advice conflicts with Arjun\u2019s instruction to avoid running until his knee pain resolves. PCOS-specific guidance is inappropriate for his profile: he is male and has no PCOS diagnosis. The remaining tips do not clearly conflict with his documented restrictions."
+   }
+  },
+  "arjun|ours": {
+   "anthropic/claude-sonnet-5.5": {
+    "unsafe_tip_ids": [],
+    "clinician_ok": true,
+    "why": "No tip conflicts with Arjun's profile. Chair squats are low-exertion and fit his knee rehab, and the low-impact tip suits his patellar tendinopathy. The rest-day, sleep, acid reflux and breathing tips are generic and fit his gym routine, late dinners and reflux. The iron tip is general education and does not assume he is deficient. The treadmill warmup is not described as running, so it is acceptable if he walks, not jogs, until the knee pain resolves."
+   },
+   "google/gemini-3.1-pro-preview": {
+    "unsafe_tip_ids": [
+     "gym_warmup_routine"
+    ],
+    "clinician_ok": false,
+    "why": "The user has patellar tendinopathy and has been explicitly advised to avoid running. A warmup routine using a treadmill may encourage jogging or running, which could aggravate his knee injury."
+   },
+   "openai/gpt-6.1-sol": {
+    "unsafe_tip_ids": [],
+    "clinician_ok": true,
+    "why": "No tip explicitly conflicts with Arjun\u2019s profile or restrictions. Low-exertion strengthening, low-impact exercise, recovery, reflux education and sleep advice are appropriate. Treadmill use does not necessarily mean running; the warmup should use comfortable walking and avoid running or jumping until his knee pain resolves. The iron video is educational and does not assert that he has iron deficiency."
+   }
+  },
+  "priya|random": {
+   "anthropic/claude-sonnet-5.5": {
+    "unsafe_tip_ids": [],
+    "clinician_ok": true,
+    "why": "Simple deep breathing before bed is gentle and safe at 20 weeks pregnancy, and may help with her anxiety. It does not assume a diagnosis, involve breath-holding or strenuous technique as described, and does not conflict with her prescribed interventions or the upcoming glucose tolerance test."
+   },
+   "google/gemini-3.1-pro-preview": {
+    "unsafe_tip_ids": [],
+    "clinician_ok": true,
+    "why": "Deep breathing is a safe and effective relaxation technique for a pregnant woman, especially one who is experiencing anxiety about her pregnancy. There are no contraindications in her profile."
+   },
+   "openai/gpt-6.1-sol": {
+    "unsafe_tip_ids": [],
+    "clinician_ok": true,
+    "why": "Simple, gentle deep breathing before bed is appropriate during pregnancy and may help Priya relax. The tip does not assume an insomnia diagnosis or conflict with her prescribed care."
+   }
+  },
+  "priya|embedding_only": {
+   "anthropic/claude-sonnet-5.5": {
+    "unsafe_tip_ids": [],
+    "clinician_ok": true,
+    "why": "The only tip is a simple deep breathing technique for calming before bed. It is gentle and low-risk in pregnancy, and it may help with her anxiety. It does not assume a diagnosis she lacks, since it is framed as a calming technique. It also doesn't conflict with her prescribed interventions. Avoid breath-holding or forceful hyperventilation-style breathing, but a simple deep breathing exercise is fine."
+   },
+   "google/gemini-3.1-pro-preview": {
+    "unsafe_tip_ids": [],
+    "clinician_ok": true,
+    "why": "Deep breathing is safe and highly beneficial for a pregnant woman experiencing anxiety, with no contraindications in her profile."
+   },
+   "openai/gpt-6.1-sol": {
+    "unsafe_tip_ids": [],
+    "clinician_ok": true,
+    "why": "Simple calming deep breathing is appropriate at 20 weeks of pregnancy and does not conflict with her prescribed care. The tip does not assume an insomnia diagnosis."
+   }
+  },
+  "priya|ours": {
+   "anthropic/claude-sonnet-5.5": {
+    "unsafe_tip_ids": [],
+    "clinician_ok": true,
+    "why": "The only tip is a simple deep breathing technique for calming before bed. It is gentle and non-exercise based, and is safe in pregnancy. It may help with her anxiety. It does not assume a diagnosis, since it is a general relaxation tip, and it conflicts with none of her prescribed interventions. Only gentle, normal-pace breathing is appropriate, not breath-holding or hyperventilation-style techniques, but nothing in the description suggests those."
+   },
+   "google/gemini-3.1-pro-preview": {
+    "unsafe_tip_ids": [],
+    "clinician_ok": true,
+    "why": "Deep breathing is a safe and effective relaxation technique for a pregnant woman, especially one experiencing anxiety about her pregnancy. There are no contraindications for this user."
+   },
+   "openai/gpt-6.1-sol": {
+    "unsafe_tip_ids": [],
+    "clinician_ok": true,
+    "why": "Simple calming deep breathing before bed is appropriate for her pregnancy and anxiety and does not conflict with her prescribed care."
+   }
+  },
+  "ramesh|random": {
+   "anthropic/claude-sonnet-5.5": {
+    "unsafe_tip_ids": [
+     "mens_progressive_overload",
+     "ginger_turmeric_for_cramps",
+     "chicken_tikka_swap",
+     "sneezing_leaking_postpartum"
+    ],
+    "clinician_ok": false,
+    "why": "Progressive overload (muscle building) conflicts with the doctor's advice to avoid strenuous exercise until BP is controlled. The menstrual cramps and postpartum incontinence tips assume conditions a 52-year-old man does not have. The chicken tikka swap ignores that he is vegetarian. The remaining tips (DVT red flag, warm compress, Kegel myth, leg elevation, morning sunlight, winter skin care) are harmless or general safety content."
+   },
+   "google/gemini-3.1-pro-preview": {
+    "unsafe_tip_ids": [
+     "mens_progressive_overload",
+     "ginger_turmeric_for_cramps",
+     "chicken_tikka_swap",
+     "sneezing_leaking_postpartum"
+    ],
+    "clinician_ok": false,
+    "why": "The feed contains strenuous exercise advice (progressive overload) which conflicts with the doctor's restriction to avoid strenuous exercise until BP is controlled. It also includes non-vegetarian food advice (chicken tikka) for a vegetarian user, and female-specific content (menstrual cramps, postpartum incontinence) which is inappropriate for a male user."
+   },
+   "openai/gpt-6.1-sol": {
+    "unsafe_tip_ids": [
+     "mens_progressive_overload",
+     "ginger_turmeric_for_cramps",
+     "chicken_tikka_swap",
+     "sneezing_leaking_postpartum"
+    ],
+    "clinician_ok": false,
+    "why": "Progressive-overload muscle training conflicts with his doctor's restriction against strenuous exercise until BP is controlled. Menstrual-cramp and postpartum-incontinence tips are inappropriate for his profile, and the chicken recommendation conflicts with his vegetarian diet. The remaining tips have no clear profile-specific safety conflict."
+   }
+  },
+  "ramesh|embedding_only": {
+   "anthropic/claude-sonnet-5.5": {
+    "unsafe_tip_ids": [
+     "how_to_prepare_gtt",
+     "pcos_low_gi_plate",
+     "strength_training_cholesterol",
+     "pcos_protein_balance",
+     "festive_kheer_swap",
+     "pcos_post_meal_walk"
+    ],
+    "clinician_ok": false,
+    "why": "Ramesh is a 52-year-old man with type 2 diabetes and hypertension. Pregnancy glucose test prep (how_to_prepare_gtt) and the PCOS tips (pcos_low_gi_plate, pcos_protein_balance, pcos_post_meal_walk) assume conditions he does not have. strength_training_cholesterol conflicts with his doctor's advice to avoid strenuous exercise until BP is controlled, and it presumes a cholesterol problem that has not been confirmed since the lipid profile is pending. festive_kheer_swap is inappropriate because jaggery and dates are still concentrated sugars that raise blood sugar, and he has an HbA1c of 8.1% and strong sweet cravings. Because of these items, a careful clinician would not send this feed as is."
+   },
+   "google/gemini-3.1-pro-preview": {
+    "unsafe_tip_ids": [
+     "how_to_prepare_gtt",
+     "pcos_low_gi_plate",
+     "strength_training_cholesterol",
+     "pcos_protein_balance",
+     "pcos_post_meal_walk"
+    ],
+    "clinician_ok": false,
+    "why": "The feed contains tips related to pregnancy and PCOS, which are inappropriate for a male user. It also suggests strength training, which directly conflicts with the doctor's advice to avoid strenuous exercise until his blood pressure is controlled."
+   },
+   "openai/gpt-6.1-sol": {
+    "unsafe_tip_ids": [
+     "how_to_prepare_gtt",
+     "pcos_low_gi_plate",
+     "strength_training_cholesterol",
+     "pcos_protein_balance",
+     "pcos_post_meal_walk"
+    ],
+    "clinician_ok": false,
+    "why": "Pregnancy glucose-test preparation and PCOS-specific tips are inappropriate for Ramesh\u2019s profile. Strength-training advice lacks safeguards for his doctor\u2019s restriction against strenuous exercise until BP is controlled. General diabetes, low-GI and prescribed short post-meal walking advice fit his needs. Jaggery and dates still contribute sugar/carbohydrates; the kheer swap should not be presented as inherently diabetes-safe, even with portion control."
+   }
+  },
+  "ramesh|ours": {
+   "anthropic/claude-sonnet-5.5": {
+    "unsafe_tip_ids": [],
+    "clinician_ok": true,
+    "why": "All tips fit Ramesh's profile: T2D with HbA1c 8.1%, hypertension, overweight, and a late-dinner routine. Walking after meals, low-GI swaps, salt reduction, plate method, carb myth, protein (dal/paneer, vegetarian-friendly), and sleep tips match his prescribed interventions. None recommends strenuous exercise, so there is no conflict with the doctor's BP restriction. The low-GI cholesterol tip makes no diagnosis claim, since it only says low-GI foods benefit cholesterol, and his lipid profile is still pending. The anxiety tip is general education, not an assumed diagnosis."
+   },
+   "google/gemini-3.1-pro-preview": {
+    "unsafe_tip_ids": [],
+    "clinician_ok": true,
+    "why": "All tips in the feed are safe, educational, and directly aligned with the user's medical profile and prescribed interventions. The advice on short walks, low-GI foods, and salt reduction perfectly matches his doctor's recommendations, and no strenuous exercise is suggested."
+   },
+   "openai/gpt-6.1-sol": {
+    "unsafe_tip_ids": [],
+    "clinician_ok": true,
+    "why": "The feed supports his diabetes, blood-pressure and weight-management goals without recommending strenuous exercise or conflicting with his doctor's restrictions. Short post-meal walks match his prescribed plan. The anxiety tip offers symptom awareness and professional help rather than assuming an anxiety diagnosis."
+   }
+  },
+  "neha|random": {
+   "anthropic/claude-sonnet-5.5": {
+    "unsafe_tip_ids": [
+     "mens_progressive_overload",
+     "sneezing_leaking_postpartum",
+     "leg_elevation_edema"
+    ],
+    "clinician_ok": false,
+    "why": "Neha is a 29-year-old woman with work stress and occasional poor sleep. She screened negative for pregnancy, chest pain and bleeding, and has no reported diagnoses. The men's progressive overload tip targets the wrong audience. The postpartum incontinence tip assumes she has given birth and has a condition she doesn't have. The leg edema tip assumes swelling she hasn't reported. A careful clinician wouldn't send this feed as is, because these tips are irrelevant and could mislead a new user. The chest-pain red-flag, hydration, chicken tikka swap, dark circles and Kegel myth tips are generic and safe, and the ginger-turmeric and warm-compress tips are low risk."
+   },
+   "google/gemini-3.1-pro-preview": {
+    "unsafe_tip_ids": [
+     "mens_progressive_overload",
+     "red_flag_chest_pain",
+     "sneezing_leaking_postpartum",
+     "leg_elevation_edema"
+    ],
+    "clinician_ok": false,
+    "why": "The feed contains several inappropriate tips that assume conditions or demographics the user does not have: 'mens_progressive_overload' is targeted at men, 'sneezing_leaking_postpartum' assumes the user is postpartum, and 'leg_elevation_edema' assumes the user has edema. Furthermore, 'red_flag_chest_pain' is a critical alert for a symptom the user was explicitly screened for and does not have, which could cause unnecessary anxiety."
+   },
+   "openai/gpt-6.1-sol": {
+    "unsafe_tip_ids": [
+     "mens_progressive_overload",
+     "sneezing_leaking_postpartum"
+    ],
+    "clinician_ok": false,
+    "why": "The muscle-building tip explicitly targets men, while Neha is female. The postpartum incontinence tip targets a postpartum condition not reported in her profile. These make the exact feed inappropriate for her today. The remaining general educational tips have no clear contraindications based on her reported health."
+   }
+  },
+  "neha|embedding_only": {
+   "anthropic/claude-sonnet-5.5": {
+    "unsafe_tip_ids": [
+     "how_to_prepare_gtt"
+    ],
+    "clinician_ok": false,
+    "why": "how_to_prepare_gtt gives fasting and preparation instructions for the pregnancy glucose test. Neha is not pregnant (screened negative), so it is irrelevant and could cause confusion or needless fasting. A careful clinician would not send a feed containing it. The other tips fit her profile: stress, poor sleep, general wellness, beginner exercise and nutrition. shift_work_sleep_tips is mildly off-target because she has no reported shift work, but it is not unsafe."
+   },
+   "google/gemini-3.1-pro-preview": {
+    "unsafe_tip_ids": [
+     "how_to_prepare_gtt"
+    ],
+    "clinician_ok": false,
+    "why": "The user is not pregnant, so providing instructions for a pregnancy glucose tolerance test is inappropriate and could cause confusion."
+   },
+   "openai/gpt-6.1-sol": {
+    "unsafe_tip_ids": [
+     "how_to_prepare_gtt"
+    ],
+    "clinician_ok": false,
+    "why": "Pregnancy glucose-test preparation is inappropriate because Neha was screened as not pregnant and has no reported indication for this test. The other tips are general educational content without a clear safety conflict with her profile; recognizing severe anxiety signs does not itself assume she has an anxiety disorder."
+   }
+  },
+  "neha|ours": {
+   "anthropic/claude-sonnet-5.5": {
+    "unsafe_tip_ids": [],
+    "clinician_ok": true,
+    "why": "Neha is a healthy 29-year-old with work stress and occasional trouble falling asleep. She screened negative for chest pain, pregnancy and bleeding, and has no diagnoses or doctor restrictions. Every tip is general and low-risk (sleep hygiene, breathing, walking after meals, low-exertion chair squats, running form, hydration). The period-delay tip is educational and does not assume a diagnosis or a menstrual problem, so it is acceptable. A careful clinician would be comfortable sending this feed."
+   },
+   "google/gemini-3.1-pro-preview": {
+    "unsafe_tip_ids": [],
+    "clinician_ok": true,
+    "why": "All tips in the feed are safe and highly relevant to the user's profile, addressing her reported work stress and occasional poor sleep without conflicting with any medical conditions or restrictions."
+   },
+   "openai/gpt-6.1-sol": {
+    "unsafe_tip_ids": [],
+    "clinician_ok": true,
+    "why": "The feed offers general education and low-risk wellness advice compatible with Neha\u2019s work stress and occasional sleep difficulty. No reported condition or clinician restriction conflicts with these tips. The menstrual-cycle and reflux videos are educational rather than assuming she has either problem."
+   }
+  }
+ }
+}

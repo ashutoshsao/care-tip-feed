@@ -36,14 +36,14 @@ INTERVENTIONS = [
     "low_gi_diet", "small_frequent_meals", "salt_reduction", "leg_elevation",
 ]
 
-RESTRICTIONS = ["no_high_exertion", "no_fasting", "low_salt", "low_sugar"]
+RESTRICTIONS = ["no_high_exertion",  # = avoid strenuous: blocks moderate + high
+                "no_fasting", "low_salt", "low_sugar"]
 
 LANGUAGES = ["hi", "en", "hinglish", "ta"]
 CLOSE_LANGUAGES = {"hi": ["hinglish"], "hinglish": ["hi"], "en": [], "ta": []}  # D2 step 2
 
 SYNONYMS = {
     "shift_work_sleep": ["circadian_rhythm"],
-    "insomnia": ["circadian_rhythm"],
     "menstrual_pain": ["dysmenorrhea"],
     "vaginal_laxity": ["pelvic_floor"],
     "postpartum_recovery": ["pelvic_floor"],

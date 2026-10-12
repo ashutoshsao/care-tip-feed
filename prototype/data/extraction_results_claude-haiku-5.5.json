@@ -39,23 +39,23 @@
     {
      "code": "suspected_cardiac",
      "status": "active",
-     "quote": "intermittent chest pain and left-hand numbness"
+     "quote": "intermittent chest pain and left-hand numbness (every 2-3 days)"
     }
    ],
    "issues": [
+    {
+     "code": "cycle_irregularity",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "Period irregularities"
+    },
     {
      "code": "menstrual_pain",
      "status": "confirmed",
      "severity": "severe",
      "chronic": false,
      "quote": "severe menstrual pain"
-    },
-    {
-     "code": "cycle_irregularity",
-     "status": "confirmed",
-     "severity": "moderate",
-     "chronic": true,
-     "quote": "Period irregularities"
     },
     {
      "code": "shift_work_sleep",
@@ -67,14 +67,14 @@
     {
      "code": "insomnia",
      "status": "confirmed",
-     "severity": "moderate",
+     "severity": "mild",
      "chronic": false,
      "quote": "difficulty sleeping during day"
     },
     {
      "code": "fatigue",
      "status": "confirmed",
-     "severity": "severe",
+     "severity": "moderate",
      "chronic": false,
      "quote": "fatigue"
     },
@@ -103,7 +103,7 @@
      "code": "vaginal_laxity",
      "status": "confirmed",
      "severity": "mild",
-     "chronic": true,
+     "chronic": false,
      "quote": "Vaginal laxity (post-delivery)"
     }
    ],
@@ -112,19 +112,19 @@
      "code": "thyroid_panel",
      "status": "scheduled",
      "result_summary": null,
-     "quote": "home-sample collection scheduled"
+     "quote": "blood tests (thyroid/iron/Vitamin D) to be completed this week"
     },
     {
      "code": "iron_panel",
      "status": "scheduled",
      "result_summary": null,
-     "quote": "home-sample collection scheduled"
+     "quote": "blood tests (thyroid/iron/Vitamin D) to be completed this week"
     },
     {
      "code": "vitamin_d",
      "status": "scheduled",
      "result_summary": null,
-     "quote": "home-sample collection scheduled"
+     "quote": "blood tests (thyroid/iron/Vitamin D) to be completed this week"
     }
    ],
    "goals": [
@@ -162,20 +162,16 @@
    "restrictions": [],
    "other": [
     {
-     "text": "reduced menstrual bleeding duration (5-6 days to 2 days)",
-     "quote": "bleeding duration reduced from 5-6 days to 2 days"
-    },
-    {
      "text": "body heaviness",
      "quote": "body heaviness"
     },
     {
-     "text": "weekly fitness routine to be designed",
-     "quote": "weekly fitness routine to be designed"
+     "text": "extreme weakness",
+     "quote": "extreme weakness"
     },
     {
-     "text": "urgent medical evaluation advised for chest pain and left-hand numbness",
-     "quote": "urgent medical evaluation advised for chest pain and left-hand numbness"
+     "text": "weekly fitness routine to be designed",
+     "quote": "weekly fitness routine to be designed"
     }
    ]
   }
@@ -239,13 +235,6 @@
      "quote": "Period irregularities"
     },
     {
-     "code": "fatigue",
-     "status": "confirmed",
-     "severity": "moderate",
-     "chronic": false,
-     "quote": "fatigue"
-    },
-    {
      "code": "shift_work_sleep",
      "status": "confirmed",
      "severity": "moderate",
@@ -255,15 +244,22 @@
     {
      "code": "insomnia",
      "status": "confirmed",
-     "severity": "moderate",
+     "severity": "mild",
      "chronic": false,
      "quote": "difficulty sleeping during day"
+    },
+    {
+     "code": "fatigue",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "fatigue"
     },
     {
      "code": "stress",
      "status": "confirmed",
      "severity": "moderate",
-     "chronic": false,
+     "chronic": true,
      "quote": "High stress level"
     },
     {
@@ -276,14 +272,14 @@
     {
      "code": "leg_swelling",
      "status": "confirmed",
-     "severity": "moderate",
+     "severity": "mild",
      "chronic": false,
      "quote": "leg swelling (worse at night)"
     },
     {
      "code": "vaginal_laxity",
      "status": "confirmed",
-     "severity": "moderate",
+     "severity": "mild",
      "chronic": false,
      "quote": "Vaginal laxity (post-delivery)"
     }
@@ -293,19 +289,19 @@
      "code": "thyroid_panel",
      "status": "scheduled",
      "result_summary": null,
-     "quote": "no thyroid, iron, or vitamin D tests done (home-sample collection scheduled)"
+     "quote": "blood tests (thyroid/iron/Vitamin D) to be completed this week"
     },
     {
      "code": "iron_panel",
      "status": "scheduled",
      "result_summary": null,
-     "quote": "no thyroid, iron, or vitamin D tests done (home-sample collection scheduled)"
+     "quote": "blood tests (thyroid/iron/Vitamin D) to be completed this week"
     },
     {
      "code": "vitamin_d",
      "status": "scheduled",
      "result_summary": null,
-     "quote": "no thyroid, iron, or vitamin D tests done (home-sample collection scheduled)"
+     "quote": "blood tests (thyroid/iron/Vitamin D) to be completed this week"
     }
    ],
    "goals": [
@@ -316,16 +312,16 @@
    ],
    "interventions": [
     {
-     "code": "kegel",
-     "quote": "Kegel exercises (10 reps, 3x daily)"
-    },
-    {
      "code": "ginger_turmeric_drink",
-     "quote": "Warm ginger-turmeric drink daily"
+     "quote": "Warm ginger-turmeric drink daily for cramps and metabolism"
     },
     {
      "code": "warm_compress",
      "quote": "gentle warm compresses for pain"
+    },
+    {
+     "code": "sleep_block",
+     "quote": "fixed sleep block (8 AM - 3 PM with blackout curtains)"
     },
     {
      "code": "night_shift_meal_plan",
@@ -336,27 +332,31 @@
      "quote": "daily meal photo sharing via chat for progress tracking"
     },
     {
-     "code": "sleep_block",
-     "quote": "fixed sleep block (8 AM - 3 PM with blackout curtains)"
+     "code": "kegel",
+     "quote": "Kegel exercises (10 reps, 3x daily)"
     }
    ],
    "restrictions": [],
    "other": [
-    {
-     "text": "weekly fitness routine to be designed",
-     "quote": "weekly fitness routine to be designed"
-    },
     {
      "text": "body heaviness",
      "quote": "body heaviness"
     },
     {
-     "text": "lethargy",
-     "quote": "lethargy"
-    },
-    {
      "text": "extreme weakness",
      "quote": "extreme weakness"
+    },
+    {
+     "text": "weekly fitness routine to be designed",
+     "quote": "weekly fitness routine to be designed"
+    },
+    {
+     "text": "erratic meal timing",
+     "quote": "erratic meal timing"
+    },
+    {
+     "text": "medical evaluation after returning to the city next week",
+     "quote": "returning to the city next week for medical evaluation"
     }
    ]
   }
@@ -368,7 +368,7 @@
   "unresolved": [],
   "raw": {
    "critical_errors": [],
-   "critical_checks": 9,
+   "critical_checks": 10,
    "issue_recall": [
     10,
     10
@@ -380,190 +380,7 @@
   },
   "after_checks": {
    "critical_errors": [],
-   "critical_checks": 9,
-   "issue_recall": [
-    10,
-    10
-   ],
-   "intervention_recall": [
-    5,
-    5
-   ]
-  },
-  "profile": {
-   "language": "hi",
-   "sex": "female",
-   "age": 27,
-   "life_stage": "postpartum",
-   "diet_type": "nonveg",
-   "workout_setting": "home",
-   "red_flags": [
-    {
-     "code": "suspected_cardiac",
-     "status": "cleared",
-     "quote": "chest pain evaluated by cardiologist - ECG and echo normal, pain found to be musculoskeletal, cleared for moderate exercise"
-    }
-   ],
-   "issues": [
-    {
-     "code": "menstrual_pain",
-     "status": "confirmed",
-     "severity": "severe",
-     "chronic": false,
-     "quote": "severe menstrual pain"
-    },
-    {
-     "code": "cycle_irregularity",
-     "status": "confirmed",
-     "severity": "moderate",
-     "chronic": false,
-     "quote": "Period irregularities - cycle length varies, sometimes 8 days off"
-    },
-    {
-     "code": "fatigue",
-     "status": "confirmed",
-     "severity": "moderate",
-     "chronic": false,
-     "quote": "fatigue"
-    },
-    {
-     "code": "shift_work_sleep",
-     "status": "confirmed",
-     "severity": "moderate",
-     "chronic": true,
-     "quote": "erratic sleep cycle due to night shifts"
-    },
-    {
-     "code": "stress",
-     "status": "confirmed",
-     "severity": "severe",
-     "chronic": false,
-     "quote": "High stress level"
-    },
-    {
-     "code": "lower_back_pain",
-     "status": "confirmed",
-     "severity": "moderate",
-     "chronic": true,
-     "quote": "chronic lower back pain"
-    },
-    {
-     "code": "leg_swelling",
-     "status": "confirmed",
-     "severity": "mild",
-     "chronic": false,
-     "quote": "leg swelling (worse at night), improving with leg elevation"
-    },
-    {
-     "code": "vaginal_laxity",
-     "status": "confirmed",
-     "severity": "moderate",
-     "chronic": false,
-     "quote": "Vaginal laxity (post-delivery)"
-    },
-    {
-     "code": "vitamin_d_deficiency",
-     "status": "confirmed",
-     "severity": "moderate",
-     "chronic": false,
-     "quote": "Vitamin D 12 ng/mL (deficient)"
-    },
-    {
-     "code": "iron_deficiency",
-     "status": "confirmed",
-     "severity": "moderate",
-     "chronic": false,
-     "quote": "haemoglobin 10.6 g/dL with low ferritin (iron deficiency confirmed)"
-    },
-    {
-     "code": "hypothyroidism",
-     "status": "resolved",
-     "severity": "mild",
-     "chronic": false,
-     "quote": "hypothyroidism ruled out"
-    }
-   ],
-   "tests": [
-    {
-     "code": "thyroid_panel",
-     "status": "results_received",
-     "result_summary": "TSH 2.1 (normal)",
-     "quote": "TSH 2.1 (thyroid normal, hypothyroidism ruled out)"
-    },
-    {
-     "code": "iron_panel",
-     "status": "results_received",
-     "result_summary": "haemoglobin 10.6 g/dL, low ferritin",
-     "quote": "haemoglobin 10.6 g/dL with low ferritin"
-    },
-    {
-     "code": "vitamin_d",
-     "status": "results_received",
-     "result_summary": "12 ng/mL (deficient)",
-     "quote": "Vitamin D 12 ng/mL (deficient)"
-    }
-   ],
-   "goals": [
-    {
-     "code": "weight_loss",
-     "quote": "Weight Loss - at least 10 kg"
-    }
-   ],
-   "interventions": [
-    {
-     "code": "kegel",
-     "quote": "Kegel exercises (10 reps, 3x daily)"
-    },
-    {
-     "code": "sleep_block",
-     "quote": "fixed sleep block (8 AM - 3 PM with blackout curtains)"
-    },
-    {
-     "code": "ginger_turmeric_drink",
-     "quote": "warm ginger-turmeric drink daily"
-    },
-    {
-     "code": "night_shift_meal_plan",
-     "quote": "7-day meal plan aligned with night shift schedule"
-    },
-    {
-     "code": "leg_elevation",
-     "quote": "leg elevation in the evening"
-    }
-   ],
-   "restrictions": [],
-   "other": [
-    {
-     "text": "Vitamin D supplementation as advised by doctor",
-     "quote": "Vitamin D supplementation as advised by doctor"
-    },
-    {
-     "text": "Iron-rich diet and iron supplements",
-     "quote": "iron-rich diet and iron supplements"
-    }
-   ]
-  }
- },
- {
-  "model": "anthropic/claude-haiku-5.5",
-  "pep": "reema_v2",
-  "flags": [],
-  "unresolved": [],
-  "raw": {
-   "critical_errors": [],
-   "critical_checks": 9,
-   "issue_recall": [
-    10,
-    10
-   ],
-   "intervention_recall": [
-    5,
-    5
-   ]
-  },
-  "after_checks": {
-   "critical_errors": [],
-   "critical_checks": 9,
+   "critical_checks": 10,
    "issue_recall": [
     10,
     10
@@ -599,7 +416,7 @@
      "code": "cycle_irregularity",
      "status": "confirmed",
      "severity": "moderate",
-     "chronic": false,
+     "chronic": true,
      "quote": "Period irregularities - cycle length varies, sometimes 8 days off"
     },
     {
@@ -633,7 +450,7 @@
     {
      "code": "leg_swelling",
      "status": "confirmed",
-     "severity": "moderate",
+     "severity": "mild",
      "chronic": false,
      "quote": "leg swelling (worse at night)"
     },
@@ -668,21 +485,21 @@
    ],
    "tests": [
     {
-     "code": "iron_panel",
-     "status": "results_received",
-     "result_summary": "haemoglobin 10.6 g/dL with low ferritin",
-     "quote": "haemoglobin 10.6 g/dL with low ferritin"
-    },
-    {
      "code": "vitamin_d",
      "status": "results_received",
      "result_summary": "12 ng/mL (deficient)",
      "quote": "Vitamin D 12 ng/mL (deficient)"
     },
     {
+     "code": "iron_panel",
+     "status": "results_received",
+     "result_summary": "haemoglobin 10.6 g/dL with low ferritin",
+     "quote": "haemoglobin 10.6 g/dL with low ferritin"
+    },
+    {
      "code": "thyroid_panel",
      "status": "results_received",
-     "result_summary": "TSH 2.1 (normal)",
+     "result_summary": "TSH 2.1 (thyroid normal)",
      "quote": "TSH 2.1 (thyroid normal, hypothyroidism ruled out)"
     }
    ],
@@ -714,114 +531,208 @@
      "quote": "leg elevation in the evening"
     }
    ],
-   "restrictions": [],
+   "restrictions": [
+    {
+     "code": "no_high_exertion",
+     "quote": "cleared for moderate exercise"
+    }
+   ],
    "other": [
     {
      "text": "Vitamin D supplementation as advised by doctor",
      "quote": "Vitamin D supplementation as advised by doctor"
     },
     {
-     "text": "Iron-rich diet and iron supplements",
+     "text": "iron-rich diet and iron supplements",
      "quote": "iron-rich diet and iron supplements"
-    },
-    {
-     "text": "Home-based workouts using mat, wall, chair in 25-minute modules",
-     "quote": "Home-based workouts; mat, wall, chair; 25-minute modules"
     }
    ]
   }
  },
  {
   "model": "anthropic/claude-haiku-5.5",
-  "pep": "arjun",
+  "pep": "reema_v2",
   "flags": [],
   "unresolved": [],
   "raw": {
    "critical_errors": [],
-   "critical_checks": 6,
+   "critical_checks": 10,
    "issue_recall": [
-    3,
-    3
+    10,
+    10
    ],
    "intervention_recall": [
-    1,
-    1
+    5,
+    5
    ]
   },
   "after_checks": {
    "critical_errors": [],
-   "critical_checks": 6,
+   "critical_checks": 10,
    "issue_recall": [
-    3,
-    3
+    10,
+    10
    ],
    "intervention_recall": [
-    1,
-    1
+    5,
+    5
    ]
   },
   "profile": {
-   "language": "en",
-   "sex": "male",
-   "age": 24,
-   "life_stage": "none",
-   "diet_type": "veg",
-   "workout_setting": "gym",
-   "red_flags": [],
+   "language": "hi",
+   "sex": "female",
+   "age": 27,
+   "life_stage": "postpartum",
+   "diet_type": "unknown",
+   "workout_setting": "home",
+   "red_flags": [
+    {
+     "code": "suspected_cardiac",
+     "status": "cleared",
+     "quote": "Cardiac concern cleared after evaluation."
+    }
+   ],
    "issues": [
     {
-     "code": "knee_pain",
+     "code": "menstrual_pain",
+     "status": "confirmed",
+     "severity": "severe",
+     "chronic": false,
+     "quote": "severe menstrual pain"
+    },
+    {
+     "code": "cycle_irregularity",
      "status": "confirmed",
      "severity": "moderate",
      "chronic": false,
-     "quote": "Right knee pain after running"
+     "quote": "Period irregularities - cycle length varies, sometimes 8 days off"
     },
     {
-     "code": "muscle_soreness",
+     "code": "fatigue",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "fatigue"
+    },
+    {
+     "code": "shift_work_sleep",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": true,
+     "quote": "erratic sleep cycle due to night shifts"
+    },
+    {
+     "code": "stress",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "High stress level"
+    },
+    {
+     "code": "lower_back_pain",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": true,
+     "quote": "chronic lower back pain"
+    },
+    {
+     "code": "leg_swelling",
      "status": "confirmed",
      "severity": "mild",
      "chronic": false,
-     "quote": "muscle soreness after workouts"
+     "quote": "leg swelling (worse at night), improving with leg elevation"
     },
     {
-     "code": "acid_reflux",
+     "code": "vaginal_laxity",
      "status": "confirmed",
      "severity": "mild",
      "chronic": false,
-     "quote": "occasional acid reflux after late dinners"
+     "quote": "Vaginal laxity (post-delivery)"
+    },
+    {
+     "code": "iron_deficiency",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "haemoglobin 10.6 g/dL with low ferritin (iron deficiency confirmed)"
+    },
+    {
+     "code": "vitamin_d_deficiency",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "Vitamin D 12 ng/mL (deficient)"
+    },
+    {
+     "code": "hypothyroidism",
+     "status": "resolved",
+     "severity": "mild",
+     "chronic": false,
+     "quote": "hypothyroidism ruled out"
     }
    ],
-   "tests": [],
+   "tests": [
+    {
+     "code": "thyroid_panel",
+     "status": "results_received",
+     "result_summary": "TSH 2.1 (thyroid normal)",
+     "quote": "TSH 2.1 (thyroid normal, hypothyroidism ruled out)"
+    },
+    {
+     "code": "iron_panel",
+     "status": "results_received",
+     "result_summary": "haemoglobin 10.6 g/dL with low ferritin",
+     "quote": "haemoglobin 10.6 g/dL with low ferritin (iron deficiency confirmed)"
+    },
+    {
+     "code": "vitamin_d",
+     "status": "results_received",
+     "result_summary": "12 ng/mL (deficient)",
+     "quote": "Vitamin D 12 ng/mL (deficient)"
+    }
+   ],
    "goals": [
     {
-     "code": "muscle_gain",
-     "quote": "Muscle gain - wants to add 5 kg lean mass in 6 months"
+     "code": "weight_loss",
+     "quote": "Weight Loss - at least 10 kg"
     }
    ],
    "interventions": [
     {
-     "code": "strength_training_plan",
-     "quote": "Progressive strength training plan avoiding high-impact moves"
+     "code": "kegel",
+     "quote": "Kegel exercises (10 reps, 3x daily)"
+    },
+    {
+     "code": "sleep_block",
+     "quote": "fixed sleep block (8 AM - 3 PM with blackout curtains)"
+    },
+    {
+     "code": "ginger_turmeric_drink",
+     "quote": "warm ginger-turmeric drink daily"
+    },
+    {
+     "code": "night_shift_meal_plan",
+     "quote": "7-day meal plan aligned with night shift schedule"
+    },
+    {
+     "code": "leg_elevation",
+     "quote": "leg elevation in the evening"
     }
    ],
    "restrictions": [
     {
      "code": "no_high_exertion",
-     "quote": "Advised to avoid jumping and running until knee pain resolves."
+     "quote": "cleared for moderate exercise"
     }
    ],
    "other": [
     {
-     "text": "Physiotherapy exercises for knee",
-     "quote": "physiotherapy exercises for knee"
+     "text": "Vitamin D supplementation as advised by doctor",
+     "quote": "Vitamin D supplementation as advised by doctor"
     },
     {
-     "text": "Protein intake below target",
-     "quote": "protein intake below target"
-    },
-    {
-     "text": "Earlier dinner at least 2 hours before bed",
-     "quote": "earlier dinner at least 2 hours before bed"
+     "text": "Iron supplements and iron-rich diet",
+     "quote": "iron-rich diet and iron supplements"
     }
    ]
   }
@@ -911,9 +822,100 @@
      "quote": "diagnosed as patellar tendinopathy by physiotherapist"
     },
     {
+     "text": "Physiotherapy exercises for knee",
+     "quote": "physiotherapy exercises for knee"
+    },
+    {
+     "text": "Eat dinner at least 2 hours before bed",
+     "quote": "earlier dinner at least 2 hours before bed"
+    },
+    {
      "text": "Protein intake below target",
      "quote": "protein intake below target"
+    }
+   ]
+  }
+ },
+ {
+  "model": "anthropic/claude-haiku-5.5",
+  "pep": "arjun",
+  "flags": [],
+  "unresolved": [],
+  "raw": {
+   "critical_errors": [],
+   "critical_checks": 6,
+   "issue_recall": [
+    3,
+    3
+   ],
+   "intervention_recall": [
+    1,
+    1
+   ]
+  },
+  "after_checks": {
+   "critical_errors": [],
+   "critical_checks": 6,
+   "issue_recall": [
+    3,
+    3
+   ],
+   "intervention_recall": [
+    1,
+    1
+   ]
+  },
+  "profile": {
+   "language": "en",
+   "sex": "male",
+   "age": 24,
+   "life_stage": "none",
+   "diet_type": "veg",
+   "workout_setting": "gym",
+   "red_flags": [],
+   "issues": [
+    {
+     "code": "knee_pain",
+     "status": "confirmed",
+     "severity": "moderate",
+     "chronic": false,
+     "quote": "Right knee pain after running"
     },
+    {
+     "code": "muscle_soreness",
+     "status": "confirmed",
+     "severity": "mild",
+     "chronic": false,
+     "quote": "muscle soreness after workouts"
+    },
+    {
+     "code": "acid_reflux",
+     "status": "confirmed",
+     "severity": "mild",
+     "chronic": false,
+     "quote": "occasional acid reflux after late dinners"
+    }
+   ],
+   "tests": [],
+   "goals": [
+    {
+     "code": "muscle_gain",
+     "quote": "Muscle gain - wants to add 5 kg lean mass in 6 months"
+    }
+   ],
+   "interventions": [
+    {
+     "code": "strength_training_plan",
+     "quote": "Progressive strength training plan avoiding high-impact moves"
+    }
+   ],
+   "restrictions": [
+    {
+     "code": "no_high_exertion",
+     "quote": "Advised to avoid jumping and running until knee pain resolves."
+    }
+   ],
+   "other": [
     {
      "text": "Physiotherapy exercises for knee",
      "quote": "physiotherapy exercises for knee"
@@ -921,6 +923,14 @@
     {
      "text": "Earlier dinner at least 2 hours before bed",
      "quote": "earlier dinner at least 2 hours before bed"
+    },
+    {
+     "text": "Protein intake below target",
+     "quote": "protein intake below target"
+    },
+    {
+     "text": "Patellar tendinopathy diagnosed by physiotherapist",
+     "quote": "diagnosed as patellar tendinopathy by physiotherapist"
     }
    ]
   }
@@ -997,7 +1007,7 @@
      "code": "glucose_tolerance",
      "status": "scheduled",
      "result_summary": null,
-     "quote": "glucose tolerance test scheduled for next week as routine screening"
+     "quote": "glucose tolerance test scheduled for next week"
     }
    ],
    "goals": [
@@ -1115,7 +1125,11 @@
    "restrictions": [],
    "other": [
     {
-     "text": "Pregnancy-safe walking (prescribed)",
+     "text": "Wants to stay active safely during pregnancy",
+     "quote": "stay active safely"
+    },
+    {
+     "text": "Pregnancy-safe walking prescribed",
      "quote": "pregnancy-safe walking"
     },
     {
@@ -1131,8 +1145,10 @@
   "flags": [],
   "unresolved": [],
   "raw": {
-   "critical_errors": [],
-   "critical_checks": 8,
+   "critical_errors": [
+    "missed restriction low_salt"
+   ],
+   "critical_checks": 9,
    "issue_recall": [
     3,
     3
@@ -1143,8 +1159,10 @@
    ]
   },
   "after_checks": {
-   "critical_errors": [],
-   "critical_checks": 8,
+   "critical_errors": [
+    "missed restriction low_salt"
+   ],
+   "critical_checks": 9,
    "issue_recall": [
     3,
     3
@@ -1181,13 +1199,13 @@
      "code": "high_cholesterol",
      "status": "suspected",
      "severity": "mild",
-     "chronic": false,
+     "chronic": true,
      "quote": "high cholesterol not checked recently"
     },
     {
      "code": "overweight",
      "status": "confirmed",
-     "severity": "mild",
+     "severity": "moderate",
      "chronic": true,
      "quote": "overweight"
     }
@@ -1203,17 +1221,17 @@
      "code": "lipid_panel",
      "status": "advised",
      "result_summary": null,
-     "quote": "lipid profile test advised"
+     "quote": "lipid profile advised"
     }
    ],
    "goals": [
     {
-     "code": "glucose_control",
-     "quote": "Control blood sugar"
-    },
-    {
      "code": "weight_loss",
      "quote": "lose some weight"
+    },
+    {
+     "code": "glucose_control",
+     "quote": "Control blood sugar"
     }
    ],
    "interventions": [
@@ -1242,16 +1260,12 @@
      "quote": "frequent sugar cravings"
     },
     {
-     "text": "eats white rice daily",
-     "quote": "eats white rice daily"
+     "text": "Monitors blood sugar at home",
+     "quote": "Monitoring sugar at home."
     },
     {
-     "text": "late dinner routine",
-     "quote": "late dinner"
-    },
-    {
-     "text": "monitors blood sugar at home",
-     "quote": "Monitoring sugar at home"
+     "text": "Quit smoking 5 years ago",
+     "quote": "Quit smoking 5 years ago"
     }
    ]
   }
@@ -1263,7 +1277,7 @@
   "unresolved": [],
   "raw": {
    "critical_errors": [],
-   "critical_checks": 8,
+   "critical_checks": 9,
    "issue_recall": [
     3,
     3
@@ -1275,7 +1289,7 @@
   },
   "after_checks": {
    "critical_errors": [],
-   "critical_checks": 8,
+   "critical_checks": 9,
    "issue_recall": [
     3,
     3
@@ -1334,7 +1348,7 @@
      "code": "lipid_panel",
      "status": "advised",
      "result_summary": null,
-     "quote": "lipid profile test advised"
+     "quote": "lipid profile advised"
     }
    ],
    "goals": [
@@ -1364,25 +1378,29 @@
    "restrictions": [
     {
      "code": "no_high_exertion",
-     "quote": "doctor advised to avoid strenuous exercise until BP is controlled"
+     "quote": "avoid strenuous exercise until BP is controlled"
+    },
+    {
+     "code": "low_salt",
+     "quote": "reduce salt"
     }
    ],
    "other": [
     {
-     "text": "Monitors blood sugar at home",
-     "quote": "Monitoring sugar at home."
+     "text": "frequent sugar cravings",
+     "quote": "frequent sugar cravings"
     },
     {
-     "text": "Quit smoking 5 years ago",
+     "text": "sedentary lifestyle",
+     "quote": "sedentary"
+    },
+    {
+     "text": "former smoker, quit 5 years ago",
      "quote": "Quit smoking 5 years ago"
     },
     {
-     "text": "Shop work hours 10 AM - 9 PM with late dinner",
-     "quote": "Shop 10 AM - 9 PM; late dinner"
-    },
-    {
-     "text": "Eats white rice daily and has frequent sugar cravings",
-     "quote": "eats white rice daily"
+     "text": "monitors blood sugar at home",
+     "quote": "Monitoring sugar at home."
     }
    ]
   }

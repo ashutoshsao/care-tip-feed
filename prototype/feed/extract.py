@@ -21,6 +21,7 @@ Rules:
     cleared = evaluated and cleared. severe_bleeding / dvt_suspected / suicidal_ideation likewise.
     Only add a red flag if the profile reports it; "no chest pain" means no flag.
 - restrictions: ONLY restrictions a clinician explicitly advised (e.g. "avoid strenuous exercise").
+  A clearance with a limit ("cleared for moderate exercise") is also a restriction: no_high_exertion.
   Do not infer restrictions yourself.
 - language: hindi->hi, english->en, hinglish->hinglish, tamil->ta.
 - life_stage: pregnant if pregnant; postpartum only if recently delivered / post-delivery; else none.

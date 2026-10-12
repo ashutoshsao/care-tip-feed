@@ -86,8 +86,11 @@ def safety_reason(tip: Tip, prof: Profile) -> str | None:
         return f"review {tip.review_status}"
     if hit := set(tip.contraindications) & flags:
         return f"contraindicated: {sorted(hit)}"
-    if "no_high_exertion" in restr and tip.exertion == "high":
-        return "clinician restriction: no high exertion"
+    if "no_high_exertion" in restr and tip.exertion in ("moderate", "high"):
+        return "clinician restriction: avoid strenuous exercise"
+    pending = {t.code for t in prof.tests if t.status != "results_received"}
+    if tip.prep_for_test and tip.prep_for_test not in pending:
+        return f"test prep for {tip.prep_for_test}, not pending"
     if tip.requires_confirmed_diagnosis and tip.requires_confirmed_diagnosis not in confirmed:
         return f"diagnosis lock: {tip.requires_confirmed_diagnosis} not confirmed"
     if tip.sex != "any" and tip.sex != prof.sex:
@@ -201,7 +204,7 @@ def build_feed(prof: Profile | None, library: list[Tip], tip_vecs: np.ndarray, h
             add(tid, "rotation" if len(feed) < TOP_N else "extra", topic, f"issue {topic}")
     # Good-to-know backfill when personalized tips run out (v0's middle tier): general wellness, still safety-filtered.
     eligible["backfill"] = [t.tip_id for t in library if (t.general_wellness or t.universally_safe)
-                            and t.exertion in ("none", "low")      # good-to-know tier stays low-risk
+                            and t.exertion in ("none", "low") and not t.sensitive   # good-to-know tier stays low-risk
                             and t.tip_id not in hist.disliked and safety_reason(t, prof) is None]
     while len(feed) < FEED_LEN and (tid := best("backfill")):
         add(tid, "backfill", "-", "general wellness")

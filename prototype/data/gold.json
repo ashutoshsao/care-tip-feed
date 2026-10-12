@@ -92,7 +92,9 @@
     "results_received"
    ]
   },
-  "must_restrictions": [],
+  "must_restrictions": [
+   "no_high_exertion"
+  ],
   "must_pregnant": false,
   "expect_issues": [
    "menstrual_pain",
@@ -274,5 +276,6 @@
   "expect_interventions": [],
   "expect_goals": []
  },
- "_crosscheck": "Gold cross-checked by gemini-3.1-pro-preview and gpt-6.1-sol (data/gold_crosscheck.json); majority rule: ramesh low_salt added (2 of 3); high_cholesterol stays not-confirmed (2 of 3, sentence flagged ambiguous)."
+ "_crosscheck": "Gold cross-checked by gemini-3.1-pro-preview and gpt-6.1-sol (data/gold_crosscheck.json); majority rule: ramesh low_salt added (2 of 3); high_cholesterol stays not-confirmed (2 of 3, sentence flagged ambiguous).",
+ "_judge_refinement": "reema_v2 must_restrictions no_high_exertion added after all 3 judges flagged HIIT: clearance was for moderate exercise only."
 }
