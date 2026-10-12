@@ -1,0 +1,7 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+prototype/data/embed_cache/
+prototype/data/library.raw.json
