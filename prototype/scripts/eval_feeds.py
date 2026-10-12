@@ -1,4 +1,4 @@
-"""Prototype step 9: random vs embedding-only (mentor's design) vs full system (D16).
+"""Prototype step 9: random vs embedding-only (plain semantic search) vs full system (D16).
 
 Code metrics use a reference profile built from the cross-checked gold labels, so the full system is
 scored against truth, not against its own extraction. A 3-provider judge panel adds the checks code can't do.
