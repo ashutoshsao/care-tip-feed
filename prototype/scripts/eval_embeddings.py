@@ -13,7 +13,7 @@ from feed import vocab
 from feed.embed import embed
 from feed.schemas import Tip
 
-MODELS = ["qwen3-embedding:0.6b", "bge-m3"]
+MODELS = ["qwen3-embedding:0.6b", "bge-m3", "embeddinggemma", "embeddinggemma-2"]
 # Real phrases from the test profiles → the issue code they should find.
 QUERIES = [
     ("severe menstrual pain", "menstrual_pain"),

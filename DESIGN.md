@@ -109,9 +109,9 @@ OFFLINE: embed new tips once · LLM drafts vocabulary additions → clinicians r
 negation check; Gemini 3.8 Flash 0 errors at 5× the cost; DeepSeek dropped for invalid output. All models shared
 one later miss, a vocabulary overlap with no safety impact (lesson 5 below).
 
-**Embeddings** (16 English phrases from the profiles): a matching tip is in the top 5 for 94% when matched against
-English descriptions, but 81% when matched against the Hindi videos, on both models tested. So the pipeline matches in
-English and serves the Hindi video (D1); Qwen3-Embedding is the best English matcher of the two.
+**Embeddings** (4 local models, 16 English phrases from the profiles): the original EmbeddingGemma finds a matching
+tip in the top 5 for 94% of phrases, against English or Hindi tips alike; Qwen and BGE-M3 drop to 81% against Hindi.
+The newer EmbeddingGemma 2 crowds all scores into 0.7–0.8, so thresholds get fragile. Pick: EmbeddingGemma.
 
 **After launch:** system health (flag rates, review queue), weekly clinician audit of sampled feeds, user
 response normalized per user (completion, dislikes), and the real outcome — do users follow their care plan?

@@ -33,13 +33,17 @@ a sensitive tip in backfill). Fixed → 6/6.
 
 16 real English phrases from the test profiles, matched against 106 tips. Hit = a tip about that issue in the top 5.
 
-| Model | English → Hindi tips | English → English tips |
-|---|---|---|
-| qwen3-embedding:0.6b (used) | 81% | **94%** |
-| bge-m3 | 81% (better rank, MRR 0.75 vs 0.67) | 88% |
+| Model | English → Hindi tips | English → English tips | Tip-to-tip similarity (median / p95) |
+|---|---|---|---|
+| embeddinggemma (308M) | **94%** | **94%** | 0.28–0.34 / 0.50 — best separation |
+| embeddinggemma-2 (740M) | 88% | 94% | 0.64–0.71 / 0.74–0.79 — crowded, thresholds fragile |
+| qwen3-embedding:0.6b (used in prototype) | 81% | 94% | 0.31–0.51 / 0.50–0.67 |
+| bge-m3 | 81% | 88% | 0.48–0.51 / 0.61–0.64 |
 
-Crossing languages costs 7–13 points for both models → evidence for D1 (match on the English description, serve the
-Hindi video). Qwen is best for English matching, which is how the pipeline uses it. Small test: direction, not precision.
+- Cross-language loss depends on the model: EmbeddingGemma loses nothing on this test; Qwen and BGE-M3 lose ~13 points.
+- Newer isn't better here: EmbeddingGemma 2 squeezes almost every tip into 0.7–0.8 similarity (Headspace's lesson:
+  check score spread on your own catalog).
+- 16 queries → one query = 6 points. Direction, not precision. Recommendation: EmbeddingGemma (smaller, best spread).
 
 ## 3. Reema's feed today (v1)
 
