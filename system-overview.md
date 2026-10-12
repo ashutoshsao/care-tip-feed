@@ -34,6 +34,6 @@ OFFLINE / OCCASIONAL
 
 ## Cost (assumed 50k–100k profile changes/day)
 
-- Extraction: ≈ $27/day batch at 100k (Haiku 5.5) ≈ $800/month
+- Extraction: measured ≈ $0.0015 each (Haiku 5.5) → ≈ $75/day batch at 100k ≈ $2.2k/month
 - Verifier on flagged (~10%): a few $/day
 - Daily composition for all users: near-zero

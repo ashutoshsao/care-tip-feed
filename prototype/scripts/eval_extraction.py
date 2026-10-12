@@ -72,8 +72,8 @@ def run_one(model, name):
     return model, name, raw, flags, fixed, unresolved
 
 
-def main(runs: int = 2):
-    jobs = [(m, n) for m in MODELS for n in PEPS for _ in range(runs)]
+def main(models=MODELS, runs: int = 2):
+    jobs = [(m, n) for m in models for n in PEPS for _ in range(runs)]
     with ThreadPoolExecutor(max_workers=8) as pool:
         results = list(pool.map(lambda j: run_one(*j), jobs))
     out, summary = [], {}
@@ -100,4 +100,4 @@ def main(runs: int = 2):
 
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv[1:] or MODELS)
