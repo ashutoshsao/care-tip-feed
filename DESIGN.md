@@ -136,3 +136,190 @@ A/B test against the current feed with a small randomized slice. Never optimize 
 
 ---
 *Repo: `plan.md` (full decision log D1–D18), `research.md` (sources), `prototype/` (code, data, `RESULTS.md`).*
+
+
+---
+
+## Appendix A — Reema's PEP (from the assignment)
+
+```xml
+<PatientProfile>
+  <Name>Reema</Name>
+  <Age>27</Age>
+  <Gender>Female</Gender>
+  <Language>hindi</Language>
+  <SocioCulturalContext>Female; currently at her parents' home, returning to the city next week; has one child</SocioCulturalContext>
+  <Personality>Agreeable; flexible with meal timings</Personality>
+  <FitnessGoals>Weight Loss - at least 10 kg; no specific timeline stated</FitnessGoals>
+  <MedicalProfile>Period irregularities - cycle length varies, sometimes 8 days off; bleeding duration reduced from 5-6 days to 2 days; inconsistent flow; severe menstrual pain; body heaviness; fatigue; lethargy; erratic sleep cycle due to night shifts (sleep at 3-4 AM); difficulty sleeping during day; no thyroid, iron, or vitamin D tests done (home-sample collection scheduled); chronic lower back pain; leg swelling (worse at night); intermittent chest pain and left-hand numbness (every 2-3 days), extreme weakness</MedicalProfile>
+  <SexualWellnessProfile>Vaginal laxity (post-delivery); advised Kegel exercises; urgent medical evaluation advised for chest pain and left-hand numbness</SexualWellnessProfile>
+  <AddictionProfile></AddictionProfile>
+  <DailyRoutine>Irregular wake-sleep schedule due to night shifts; sleep 3-4 AM; tries to sleep 2-3 hours during day if time permits; work-eat-sleep routine only; no structured daily routine</DailyRoutine>
+  <FoodPreferences>Eats typical home food; consumes fast food and instant noodles occasionally; non-vegetarian occasionally; eats 2-3 rotis per typical meal; no food allergies or intolerances; no specific meal timing</FoodPreferences>
+  <FitnessRoutine>Structured home-based workout routine; access to mat, wall, chair, and table; 25-minute modules; prefers home-based routine</FitnessRoutine>
+  <LifestyleProblems>High stress level; irregular sleep; period issues - irregular cycles, reduced bleeding duration, severe pain; night shift work disrupting circadian rhythm; erratic meal timing; reliance on fast food occasionally; weight loss goal of at least 10 kg; lower back pain; leg swelling; vaginal laxity (post-delivery)</LifestyleProblems>
+  <PrescribedInterventions>Warm ginger-turmeric drink daily for cramps and metabolism; gentle warm compresses for pain; blood tests (thyroid/iron/Vitamin D) to be completed this week; fixed sleep block (8 AM - 3 PM with blackout curtains) post night shift; weekly fitness routine to be designed; 7-day meal plan aligned with night shift schedule; daily meal photo sharing via chat for progress tracking; Kegel exercises (10 reps, 3x daily); urgent medical assessment advised for chest pain and left-hand numbness</PrescribedInterventions>
+  <AdditionalComments>Blood tests still pending; returning to the city next week for medical evaluation.</AdditionalComments>
+</PatientProfile>
+```
+
+## Appendix B — Structured profile extracted from it
+
+Real output from Claude Haiku 5.5 in the prototype, after the code checks (none fired for this profile).
+
+```json
+{
+  "language": "hi",
+  "sex": "female",
+  "age": 27,
+  "life_stage": "postpartum",
+  "diet_type": "nonveg",
+  "workout_setting": "home",
+  "red_flags": [
+    {
+      "code": "suspected_cardiac",
+      "status": "active",
+      "quote": "intermittent chest pain and left-hand numbness (every 2-3 days)"
+    }
+  ],
+  "issues": [
+    {
+      "code": "cycle_irregularity",
+      "status": "confirmed",
+      "severity": "moderate",
+      "chronic": false,
+      "quote": "Period irregularities"
+    },
+    {
+      "code": "menstrual_pain",
+      "status": "confirmed",
+      "severity": "severe",
+      "chronic": false,
+      "quote": "severe menstrual pain"
+    },
+    {
+      "code": "shift_work_sleep",
+      "status": "confirmed",
+      "severity": "moderate",
+      "chronic": true,
+      "quote": "erratic sleep cycle due to night shifts"
+    },
+    {
+      "code": "insomnia",
+      "status": "confirmed",
+      "severity": "mild",
+      "chronic": false,
+      "quote": "difficulty sleeping during day"
+    },
+    {
+      "code": "fatigue",
+      "status": "confirmed",
+      "severity": "moderate",
+      "chronic": false,
+      "quote": "fatigue"
+    },
+    {
+      "code": "stress",
+      "status": "confirmed",
+      "severity": "moderate",
+      "chronic": true,
+      "quote": "High stress level"
+    },
+    {
+      "code": "lower_back_pain",
+      "status": "confirmed",
+      "severity": "moderate",
+      "chronic": true,
+      "quote": "chronic lower back pain"
+    },
+    {
+      "code": "leg_swelling",
+      "status": "confirmed",
+      "severity": "moderate",
+      "chronic": false,
+      "quote": "leg swelling (worse at night)"
+    },
+    {
+      "code": "vaginal_laxity",
+      "status": "confirmed",
+      "severity": "mild",
+      "chronic": false,
+      "quote": "Vaginal laxity (post-delivery)"
+    }
+  ],
+  "tests": [
+    {
+      "code": "thyroid_panel",
+      "status": "scheduled",
+      "result_summary": null,
+      "quote": "blood tests (thyroid/iron/Vitamin D) to be completed this week"
+    },
+    {
+      "code": "iron_panel",
+      "status": "scheduled",
+      "result_summary": null,
+      "quote": "blood tests (thyroid/iron/Vitamin D) to be completed this week"
+    },
+    {
+      "code": "vitamin_d",
+      "status": "scheduled",
+      "result_summary": null,
+      "quote": "blood tests (thyroid/iron/Vitamin D) to be completed this week"
+    }
+  ],
+  "goals": [
+    {
+      "code": "weight_loss",
+      "quote": "Weight Loss - at least 10 kg"
+    }
+  ],
+  "interventions": [
+    {
+      "code": "ginger_turmeric_drink",
+      "quote": "Warm ginger-turmeric drink daily"
+    },
+    {
+      "code": "warm_compress",
+      "quote": "gentle warm compresses for pain"
+    },
+    {
+      "code": "sleep_block",
+      "quote": "fixed sleep block (8 AM - 3 PM with blackout curtains)"
+    },
+    {
+      "code": "night_shift_meal_plan",
+      "quote": "7-day meal plan aligned with night shift schedule"
+    },
+    {
+      "code": "meal_photo_logging",
+      "quote": "daily meal photo sharing via chat for progress tracking"
+    },
+    {
+      "code": "kegel",
+      "quote": "Kegel exercises (10 reps, 3x daily)"
+    }
+  ],
+  "restrictions": [],
+  "other": [
+    {
+      "text": "body heaviness",
+      "quote": "body heaviness"
+    },
+    {
+      "text": "extreme weakness",
+      "quote": "extreme weakness"
+    },
+    {
+      "text": "weekly fitness routine to be designed",
+      "quote": "weekly fitness routine to be designed"
+    }
+  ]
+}
+```
+
+Things to notice:
+- `red_flags`: chest pain is **active** — it drives the pinned tip and blocks workouts.
+- `tests`: all three are **scheduled**, not done — "to be completed this week".
+- No `hypothyroidism`, `iron_deficiency` or `vitamin_d_deficiency` issue — the PEP says no tests were done.
+- `restrictions` is empty: no clinician restriction is stated; workouts are blocked by the red flag instead.
+- `other` holds facts with no vocabulary code — they're matched by embeddings and logged to grow the vocabulary.
