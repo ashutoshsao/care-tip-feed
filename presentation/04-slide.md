@@ -1,22 +1,17 @@
-# Reading the profile safely ⏱ 1.5 min
-
-- Every fact = **code + status + verbatim quote** — "tests to be completed" ≠ "results received"
-- Checks: code first (quote exists? words fit status?) → LLM only if flagged → unsure = safer status + clinician
-- Haiku 5.5: **0/84** safety errors · GPT-6 Luna: 1 error, caught by the negation check · ~$0.0015 per profile
+# Reading the profile ⏱ 1.5 min
 
 ```json
 {
   "red_flags": [{
-    "code": "suspected_cardiac",
-    "status": "active",
+    "code": "suspected_cardiac", "status": "active",
     "quote": "chest pain and left-hand numbness"
   }],
   "tests": [{
-    "code": "thyroid_panel",
-    "status": "scheduled",
+    "code": "thyroid_panel", "status": "scheduled",
     "quote": "to be completed this week"
   }]
 }
 ```
 
 > Say: "Errors will happen — the goal is rare, visible, and cheap."
+> Also: "This is a slice; the full profile also has her language, age, other issues and prescriptions. Note what's missing: no hypothyroidism, because her profile says no tests were done."
