@@ -49,18 +49,18 @@ Walk into the 45-min session (15 min present + 30 min pushback) with a design I 
 - [x] **7. Scale & cost** (D15, system-overview.md) — LLM vs embeddings vs rules per component; back-of-envelope at 500k users
 - [x] **8. Evaluation** (D16, D17) — pre-launch vs random baseline; post-launch metrics; engagement ≠ benefit
 
-### Phase 2 — Prototype (tests the design; built after Phase 1)
-1. [ ] Schemas from Phase 1 (Tip, UserState)
-2. [ ] Synthetic library ~150–200 tips (text only) incl. deliberate traps: high-intensity workouts, presumed diagnoses, sexual-wellness, wrong-language, near-duplicates — hand-review a sample
-3. [ ] Synthetic PEPs: Reema + male lifter, pregnant, diabetic, thin profile; **Reema v2** (blood results back)
-4. [ ] Extraction PEP → UserState + eval vs hand labels (safety-flag recall must be 100%)
-5. [ ] Safety filter as rules + test per trap
-6. [ ] Embedding retrieval per issue
-7. [ ] Ranking + slot quotas + diversity
-8. [ ] Simulated 7-day engagement logs
-9. [ ] **Eval harness** — random vs embedding-only (mentor's design) vs full system; metrics: safety violations, judge score, issue coverage, intervention reinforcement
-10. [ ] Refresh demo v1 → v2: feed diff + only changed users reprocessed
-11. [ ] Report (markdown/HTML) → feeds the prototype slides
+### Phase 2 — Prototype ✅ (results: prototype/RESULTS.md)
+1. [x] Schemas from Phase 1 (Tip, UserState)
+2. [x] Synthetic library ~150–200 tips (text only) incl. deliberate traps: high-intensity workouts, presumed diagnoses, sexual-wellness, wrong-language, near-duplicates — hand-review a sample
+3. [x] Synthetic PEPs: Reema + male lifter, pregnant, diabetic, thin profile; **Reema v2** (blood results back)
+4. [x] Extraction PEP → UserState + eval vs hand labels (safety-flag recall must be 100%)
+5. [x] Safety filter as rules + test per trap
+6. [x] Embedding retrieval per issue
+7. [x] Ranking + slot quotas + diversity
+8. [x] Simulated 7-day engagement logs
+9. [x] **Eval harness** — random vs embedding-only (mentor's design) vs full system; metrics: safety violations, judge score, issue coverage, intervention reinforcement
+10. [x] Refresh demo v1 → v2: feed diff + only changed users reprocessed
+11. [x] Report (markdown/HTML) → feeds the prototype slides
 
 ### Phase 3 — Deliverables
 - [ ] Architecture diagram (Excalidraw)
