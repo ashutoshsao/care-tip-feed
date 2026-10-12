@@ -6,15 +6,17 @@
 
 ```json
 {
-  "red_flags": [{ "code": "suspected_cardiac", "status": "active",
-                  "quote": "intermittent chest pain and left-hand numbness" }],
-  "tests":     [{ "code": "thyroid_panel", "status": "scheduled",
-                  "quote": "to be completed this week" }],
-  "issues":    [{ "code": "menstrual_pain", "status": "confirmed",
-                  "severity": "severe", "quote": "severe menstrual pain" }]
+  "red_flags": [{
+    "code": "suspected_cardiac",
+    "status": "active",
+    "quote": "chest pain and left-hand numbness"
+  }],
+  "tests": [{
+    "code": "thyroid_panel",
+    "status": "scheduled",
+    "quote": "to be completed this week"
+  }]
 }
 ```
-
-Code then checks it: is each quote really in her profile, and do the words fit the status?
 
 > Say: "Errors will happen — the goal is rare, visible, and cheap."
