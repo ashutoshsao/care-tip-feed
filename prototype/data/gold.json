@@ -1,99 +1,278 @@
 {
-  "_note": "Hand-labeled expected extraction (clinician-proxy). must_* = safety-critical checks scored as hard errors; expect_* = recall sets; accept_* = alternatives also counted correct.",
-
-  "reema_v1": {
-    "language": "hi", "sex": "female", "age": 27, "diet_type": "nonveg", "workout_setting": "home",
-    "accept_life_stage": ["postpartum", "none"],
-    "must_red_flags_active": ["suspected_cardiac"],
-    "must_not_red_flags_active": [],
-    "must_not_confirmed": ["hypothyroidism", "iron_deficiency", "vitamin_d_deficiency"],
-    "must_tests": {"thyroid_panel": ["advised", "scheduled", "sample_collected"],
-                   "iron_panel": ["advised", "scheduled", "sample_collected"],
-                   "vitamin_d": ["advised", "scheduled", "sample_collected"]},
-    "must_restrictions": [],
-    "must_pregnant": false,
-    "expect_issues": ["menstrual_pain", "cycle_irregularity", "shift_work_sleep", "fatigue", "stress",
-                      "lower_back_pain", "leg_swelling", "vaginal_laxity"],
-    "expect_interventions": ["ginger_turmeric_drink", "warm_compress", "sleep_block", "night_shift_meal_plan",
-                             "meal_photo_logging", "kegel"],
-    "expect_goals": ["weight_loss"]
+ "_note": "Hand-labeled expected extraction (clinician-proxy). must_* = safety-critical checks scored as hard errors; expect_* = recall sets; accept_* = alternatives also counted correct.",
+ "reema_v1": {
+  "language": "hi",
+  "sex": "female",
+  "age": 27,
+  "diet_type": "nonveg",
+  "workout_setting": "home",
+  "accept_life_stage": [
+   "postpartum",
+   "none"
+  ],
+  "must_red_flags_active": [
+   "suspected_cardiac"
+  ],
+  "must_not_red_flags_active": [],
+  "must_not_confirmed": [
+   "hypothyroidism",
+   "iron_deficiency",
+   "vitamin_d_deficiency"
+  ],
+  "must_tests": {
+   "thyroid_panel": [
+    "advised",
+    "scheduled",
+    "sample_collected"
+   ],
+   "iron_panel": [
+    "advised",
+    "scheduled",
+    "sample_collected"
+   ],
+   "vitamin_d": [
+    "advised",
+    "scheduled",
+    "sample_collected"
+   ]
   },
-
-  "reema_v2": {
-    "language": "hi", "sex": "female", "age": 27, "diet_type": "nonveg", "workout_setting": "home",
-    "accept_life_stage": ["postpartum", "none"],
-    "must_red_flags_active": [],
-    "must_not_red_flags_active": ["suspected_cardiac"],
-    "must_confirmed": ["iron_deficiency", "vitamin_d_deficiency"],
-    "must_not_confirmed": ["hypothyroidism"],
-    "must_tests": {"thyroid_panel": ["results_received"], "iron_panel": ["results_received"],
-                   "vitamin_d": ["results_received"]},
-    "must_restrictions": [],
-    "must_pregnant": false,
-    "expect_issues": ["menstrual_pain", "cycle_irregularity", "shift_work_sleep", "fatigue", "stress",
-                      "lower_back_pain", "leg_swelling", "vaginal_laxity", "iron_deficiency", "vitamin_d_deficiency"],
-    "expect_interventions": ["ginger_turmeric_drink", "sleep_block", "night_shift_meal_plan", "kegel", "leg_elevation"],
-    "expect_goals": ["weight_loss"]
+  "must_restrictions": [],
+  "must_pregnant": false,
+  "expect_issues": [
+   "menstrual_pain",
+   "cycle_irregularity",
+   "shift_work_sleep",
+   "fatigue",
+   "stress",
+   "lower_back_pain",
+   "leg_swelling",
+   "vaginal_laxity"
+  ],
+  "expect_interventions": [
+   "ginger_turmeric_drink",
+   "warm_compress",
+   "sleep_block",
+   "night_shift_meal_plan",
+   "meal_photo_logging",
+   "kegel"
+  ],
+  "expect_goals": [
+   "weight_loss"
+  ]
+ },
+ "reema_v2": {
+  "language": "hi",
+  "sex": "female",
+  "age": 27,
+  "diet_type": "nonveg",
+  "workout_setting": "home",
+  "accept_life_stage": [
+   "postpartum",
+   "none"
+  ],
+  "must_red_flags_active": [],
+  "must_not_red_flags_active": [
+   "suspected_cardiac"
+  ],
+  "must_confirmed": [
+   "iron_deficiency",
+   "vitamin_d_deficiency"
+  ],
+  "must_not_confirmed": [
+   "hypothyroidism"
+  ],
+  "must_tests": {
+   "thyroid_panel": [
+    "results_received"
+   ],
+   "iron_panel": [
+    "results_received"
+   ],
+   "vitamin_d": [
+    "results_received"
+   ]
   },
-
-  "arjun": {
-    "language": "en", "sex": "male", "age": 24, "diet_type": "veg", "workout_setting": "gym",
-    "accept_life_stage": ["none"],
-    "must_red_flags_active": [],
-    "must_not_red_flags_active": ["suspected_cardiac"],
-    "must_confirmed": ["knee_pain"],
-    "must_not_confirmed": ["type2_diabetes"],
-    "must_not_present": ["type2_diabetes"],
-    "must_tests": {},
-    "accept_restrictions": [[], ["no_high_exertion"]],
-    "must_pregnant": false,
-    "expect_issues": ["knee_pain", "muscle_soreness", "acid_reflux"],
-    "expect_interventions": ["strength_training_plan"],
-    "expect_goals": ["muscle_gain"]
+  "must_restrictions": [],
+  "must_pregnant": false,
+  "expect_issues": [
+   "menstrual_pain",
+   "cycle_irregularity",
+   "shift_work_sleep",
+   "fatigue",
+   "stress",
+   "lower_back_pain",
+   "leg_swelling",
+   "vaginal_laxity",
+   "iron_deficiency",
+   "vitamin_d_deficiency"
+  ],
+  "expect_interventions": [
+   "ginger_turmeric_drink",
+   "sleep_block",
+   "night_shift_meal_plan",
+   "kegel",
+   "leg_elevation"
+  ],
+  "expect_goals": [
+   "weight_loss"
+  ]
+ },
+ "arjun": {
+  "language": "en",
+  "sex": "male",
+  "age": 24,
+  "diet_type": "veg",
+  "workout_setting": "gym",
+  "accept_life_stage": [
+   "none"
+  ],
+  "must_red_flags_active": [],
+  "must_not_red_flags_active": [
+   "suspected_cardiac"
+  ],
+  "must_confirmed": [
+   "knee_pain"
+  ],
+  "must_not_confirmed": [
+   "type2_diabetes"
+  ],
+  "must_not_present": [
+   "type2_diabetes"
+  ],
+  "must_tests": {},
+  "accept_restrictions": [
+   [],
+   [
+    "no_high_exertion"
+   ]
+  ],
+  "must_pregnant": false,
+  "expect_issues": [
+   "knee_pain",
+   "muscle_soreness",
+   "acid_reflux"
+  ],
+  "expect_interventions": [
+   "strength_training_plan"
+  ],
+  "expect_goals": [
+   "muscle_gain"
+  ]
+ },
+ "priya": {
+  "language": "ta",
+  "sex": "female",
+  "age": 31,
+  "diet_type": "veg",
+  "workout_setting": "home",
+  "accept_workout_setting": [
+   "home",
+   "unknown"
+  ],
+  "accept_life_stage": [
+   "pregnant"
+  ],
+  "must_red_flags_active": [],
+  "must_not_red_flags_active": [
+   "severe_bleeding"
+  ],
+  "must_not_confirmed": [
+   "type2_diabetes"
+  ],
+  "must_not_present": [
+   "type2_diabetes"
+  ],
+  "must_tests": {
+   "glucose_tolerance": [
+    "advised",
+    "scheduled"
+   ]
   },
-
-  "priya": {
-    "language": "ta", "sex": "female", "age": 31, "diet_type": "veg", "workout_setting": "home",
-    "accept_workout_setting": ["home", "unknown"],
-    "accept_life_stage": ["pregnant"],
-    "must_red_flags_active": [],
-    "must_not_red_flags_active": ["severe_bleeding"],
-    "must_not_confirmed": ["type2_diabetes"],
-    "must_not_present": ["type2_diabetes"],
-    "must_tests": {"glucose_tolerance": ["advised", "scheduled"]},
-    "must_restrictions": [],
-    "must_pregnant": true,
-    "expect_issues": ["pregnancy_nausea", "constipation", "acid_reflux", "anxiety"],
-    "expect_interventions": ["small_frequent_meals"],
-    "expect_goals": ["healthy_pregnancy"]
+  "must_restrictions": [],
+  "must_pregnant": true,
+  "expect_issues": [
+   "pregnancy_nausea",
+   "constipation",
+   "acid_reflux",
+   "anxiety"
+  ],
+  "expect_interventions": [
+   "small_frequent_meals"
+  ],
+  "expect_goals": [
+   "healthy_pregnancy"
+  ]
+ },
+ "ramesh": {
+  "language": "hinglish",
+  "sex": "male",
+  "age": 52,
+  "diet_type": "veg",
+  "workout_setting": "unknown",
+  "accept_life_stage": [
+   "none"
+  ],
+  "must_red_flags_active": [],
+  "must_not_red_flags_active": [],
+  "must_confirmed": [
+   "type2_diabetes",
+   "hypertension"
+  ],
+  "must_not_confirmed": [
+   "high_cholesterol"
+  ],
+  "must_tests": {
+   "hba1c": [
+    "results_received"
+   ],
+   "lipid_panel": [
+    "advised"
+   ]
   },
-
-  "ramesh": {
-    "language": "hinglish", "sex": "male", "age": 52, "diet_type": "veg", "workout_setting": "unknown",
-    "accept_life_stage": ["none"],
-    "must_red_flags_active": [],
-    "must_not_red_flags_active": [],
-    "must_confirmed": ["type2_diabetes", "hypertension"],
-    "must_not_confirmed": ["high_cholesterol"],
-    "must_tests": {"hba1c": ["results_received"], "lipid_panel": ["advised"]},
-    "must_restrictions": ["no_high_exertion"],
-    "must_pregnant": false,
-    "expect_issues": ["type2_diabetes", "hypertension", "overweight"],
-    "expect_interventions": ["walk_after_meals", "low_gi_diet", "salt_reduction"],
-    "expect_goals": ["glucose_control", "weight_loss"]
-  },
-
-  "neha": {
-    "language": "en", "sex": "female", "age": 29, "diet_type": "unknown", "workout_setting": "unknown",
-    "accept_life_stage": ["none"],
-    "must_red_flags_active": [],
-    "must_not_red_flags_active": ["suspected_cardiac", "severe_bleeding"],
-    "must_not_confirmed": [],
-    "must_tests": {},
-    "must_restrictions": [],
-    "must_pregnant": false,
-    "expect_issues": ["stress", "insomnia"],
-    "expect_interventions": [],
-    "expect_goals": []
-  }
+  "must_restrictions": [
+   "no_high_exertion",
+   "low_salt"
+  ],
+  "must_pregnant": false,
+  "expect_issues": [
+   "type2_diabetes",
+   "hypertension",
+   "overweight"
+  ],
+  "expect_interventions": [
+   "walk_after_meals",
+   "low_gi_diet",
+   "salt_reduction"
+  ],
+  "expect_goals": [
+   "glucose_control",
+   "weight_loss"
+  ]
+ },
+ "neha": {
+  "language": "en",
+  "sex": "female",
+  "age": 29,
+  "diet_type": "unknown",
+  "workout_setting": "unknown",
+  "accept_life_stage": [
+   "none"
+  ],
+  "must_red_flags_active": [],
+  "must_not_red_flags_active": [
+   "suspected_cardiac",
+   "severe_bleeding"
+  ],
+  "must_not_confirmed": [],
+  "must_tests": {},
+  "must_restrictions": [],
+  "must_pregnant": false,
+  "expect_issues": [
+   "stress",
+   "insomnia"
+  ],
+  "expect_interventions": [],
+  "expect_goals": []
+ },
+ "_crosscheck": "Gold cross-checked by gemini-3.1-pro-preview and gpt-6.1-sol (data/gold_crosscheck.json); majority rule: ramesh low_salt added (2 of 3); high_cholesterol stays not-confirmed (2 of 3, sentence flagged ambiguous)."
 }

@@ -22,6 +22,10 @@ PRICES = {
     "google/gemini-3.8-flash": (0.75, 3.75),
     "google/gemini-3.1-pro-preview": (2.00, 12.00),
     "openai/gpt-6-luna": (0.10, 0.50),
+    "openai/gpt-6.1-sol": (2.00, 10.00),
+    "qwen/qwen3.8-flash": (0.15, 0.47),
+    "z-ai/glm-5.3-flash": (0.15, 0.50),
+    "mistralai/mistral-small-2603": (0.15, 0.60),
 }
 
 USAGE: dict[str, dict] = {}

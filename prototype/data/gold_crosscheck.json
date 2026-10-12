@@ -1,0 +1,318 @@
+{
+ "reema_v1": {
+  "google/gemini-3.1-pro-preview": {
+   "answer": {
+    "red_flags_active": [
+     "suspected_cardiac"
+    ],
+    "conditions_confirmed": [
+     "menstrual_pain",
+     "cycle_irregularity",
+     "shift_work_sleep",
+     "insomnia",
+     "fatigue",
+     "stress",
+     "lower_back_pain",
+     "leg_swelling",
+     "vaginal_laxity",
+     "postpartum_recovery",
+     "overweight"
+    ],
+    "tests": [
+     {
+      "code": "thyroid_panel",
+      "status": "scheduled"
+     },
+     {
+      "code": "iron_panel",
+      "status": "scheduled"
+     },
+     {
+      "code": "vitamin_d",
+      "status": "scheduled"
+     }
+    ],
+    "explicit_restrictions": [],
+    "pregnant": false,
+    "language": "hi"
+   },
+   "disagreements": []
+  },
+  "openai/gpt-6.1-sol": {
+   "answer": {
+    "red_flags_active": [
+     "suspected_cardiac"
+    ],
+    "conditions_confirmed": [
+     "menstrual_pain",
+     "cycle_irregularity",
+     "shift_work_sleep",
+     "insomnia",
+     "fatigue",
+     "stress",
+     "lower_back_pain",
+     "leg_swelling",
+     "vaginal_laxity"
+    ],
+    "tests": [
+     {
+      "code": "thyroid_panel",
+      "status": "scheduled"
+     },
+     {
+      "code": "iron_panel",
+      "status": "scheduled"
+     },
+     {
+      "code": "vitamin_d",
+      "status": "scheduled"
+     }
+    ],
+    "explicit_restrictions": [],
+    "pregnant": false,
+    "language": "hi"
+   },
+   "disagreements": []
+  }
+ },
+ "reema_v2": {
+  "google/gemini-3.1-pro-preview": {
+   "answer": {
+    "red_flags_active": [],
+    "conditions_confirmed": [
+     "cycle_irregularity",
+     "menstrual_pain",
+     "fatigue",
+     "shift_work_sleep",
+     "lower_back_pain",
+     "leg_swelling",
+     "vitamin_d_deficiency",
+     "iron_deficiency",
+     "vaginal_laxity",
+     "stress",
+     "overweight"
+    ],
+    "tests": [
+     {
+      "code": "vitamin_d",
+      "status": "results_received"
+     },
+     {
+      "code": "iron_panel",
+      "status": "results_received"
+     },
+     {
+      "code": "thyroid_panel",
+      "status": "results_received"
+     }
+    ],
+    "explicit_restrictions": [],
+    "pregnant": false,
+    "language": "hi"
+   },
+   "disagreements": []
+  },
+  "openai/gpt-6.1-sol": {
+   "answer": {
+    "red_flags_active": [],
+    "conditions_confirmed": [
+     "menstrual_pain",
+     "cycle_irregularity",
+     "fatigue",
+     "shift_work_sleep",
+     "lower_back_pain",
+     "leg_swelling",
+     "vaginal_laxity",
+     "stress",
+     "vitamin_d_deficiency",
+     "iron_deficiency"
+    ],
+    "tests": [
+     {
+      "code": "vitamin_d",
+      "status": "results_received"
+     },
+     {
+      "code": "iron_panel",
+      "status": "results_received"
+     },
+     {
+      "code": "thyroid_panel",
+      "status": "results_received"
+     }
+    ],
+    "explicit_restrictions": [],
+    "pregnant": false,
+    "language": "hi"
+   },
+   "disagreements": []
+  }
+ },
+ "arjun": {
+  "google/gemini-3.1-pro-preview": {
+   "answer": {
+    "red_flags_active": [],
+    "conditions_confirmed": [
+     "knee_pain",
+     "muscle_soreness",
+     "acid_reflux"
+    ],
+    "tests": [],
+    "explicit_restrictions": [],
+    "pregnant": false,
+    "language": "en"
+   },
+   "disagreements": []
+  },
+  "openai/gpt-6.1-sol": {
+   "answer": {
+    "red_flags_active": [],
+    "conditions_confirmed": [
+     "knee_pain",
+     "muscle_soreness",
+     "acid_reflux"
+    ],
+    "tests": [],
+    "explicit_restrictions": [],
+    "pregnant": false,
+    "language": "en"
+   },
+   "disagreements": []
+  }
+ },
+ "priya": {
+  "google/gemini-3.1-pro-preview": {
+   "answer": {
+    "red_flags_active": [],
+    "conditions_confirmed": [
+     "pregnancy_nausea",
+     "constipation",
+     "anxiety",
+     "acid_reflux"
+    ],
+    "tests": [
+     {
+      "code": "glucose_tolerance",
+      "status": "scheduled"
+     }
+    ],
+    "explicit_restrictions": [],
+    "pregnant": true,
+    "language": "ta"
+   },
+   "disagreements": []
+  },
+  "openai/gpt-6.1-sol": {
+   "answer": {
+    "red_flags_active": [],
+    "conditions_confirmed": [
+     "pregnancy_nausea",
+     "constipation",
+     "acid_reflux",
+     "anxiety"
+    ],
+    "tests": [
+     {
+      "code": "glucose_tolerance",
+      "status": "scheduled"
+     }
+    ],
+    "explicit_restrictions": [],
+    "pregnant": true,
+    "language": "ta"
+   },
+   "disagreements": []
+  }
+ },
+ "ramesh": {
+  "google/gemini-3.1-pro-preview": {
+   "answer": {
+    "red_flags_active": [],
+    "conditions_confirmed": [
+     "type2_diabetes",
+     "hypertension",
+     "overweight"
+    ],
+    "tests": [
+     {
+      "code": "hba1c",
+      "status": "results_received"
+     },
+     {
+      "code": "lipid_panel",
+      "status": "advised"
+     }
+    ],
+    "explicit_restrictions": [
+     "low_salt",
+     "no_high_exertion"
+    ],
+    "pregnant": false,
+    "language": "hinglish"
+   },
+   "disagreements": [
+    "restrictions: annotator ['low_salt', 'no_high_exertion'], gold ['no_high_exertion']"
+   ]
+  },
+  "openai/gpt-6.1-sol": {
+   "answer": {
+    "red_flags_active": [],
+    "conditions_confirmed": [
+     "type2_diabetes",
+     "hypertension",
+     "high_cholesterol",
+     "overweight"
+    ],
+    "tests": [
+     {
+      "code": "hba1c",
+      "status": "results_received"
+     },
+     {
+      "code": "lipid_panel",
+      "status": "advised"
+     }
+    ],
+    "explicit_restrictions": [
+     "low_salt",
+     "no_high_exertion"
+    ],
+    "pregnant": false,
+    "language": "hinglish"
+   },
+   "disagreements": [
+    "confirmed, gold says not: {'high_cholesterol'}",
+    "restrictions: annotator ['low_salt', 'no_high_exertion'], gold ['no_high_exertion']"
+   ]
+  }
+ },
+ "neha": {
+  "google/gemini-3.1-pro-preview": {
+   "answer": {
+    "red_flags_active": [],
+    "conditions_confirmed": [
+     "stress",
+     "insomnia"
+    ],
+    "tests": [],
+    "explicit_restrictions": [],
+    "pregnant": false,
+    "language": "en"
+   },
+   "disagreements": []
+  },
+  "openai/gpt-6.1-sol": {
+   "answer": {
+    "red_flags_active": [],
+    "conditions_confirmed": [
+     "stress"
+    ],
+    "tests": [],
+    "explicit_restrictions": [],
+    "pregnant": false,
+    "language": "en"
+   },
+   "disagreements": []
+  }
+ }
+}

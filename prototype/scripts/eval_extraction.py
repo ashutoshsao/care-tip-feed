@@ -15,8 +15,7 @@ from feed.extract import code_checks, extract, verify
 from feed.llm import PRICES, USAGE, cost
 
 MODELS = ["anthropic/claude-haiku-5.5", "google/gemini-3.8-flash", "openai/gpt-6-luna"]
-VERIFIER = {"anthropic": "google/gemini-3.8-flash", "deepseek": "anthropic/claude-haiku-5.5",
-            "google": "anthropic/claude-haiku-5.5", "openai": "anthropic/claude-haiku-5.5"}   # different family from the extractor
+VERIFIER = {"anthropic": "google/gemini-3.8-flash"}   # different family from the extractor; others → Haiku
 PEPS = ["reema_v1", "reema_v2", "arjun", "priya", "ramesh", "neha"]
 GOLD = json.loads((ROOT / "data" / "gold.json").read_text())
 
@@ -68,7 +67,7 @@ def run_one(model, name):
     if name == "reema_v2":   # diff against the previous version (D11)
         prev = extract((ROOT / "data" / "peps" / "reema_v1.xml").read_text(), model)
     flags = code_checks(pep, raw, prev)
-    fixed, unresolved = verify(pep, raw, flags, VERIFIER[model.split("/")[0]])
+    fixed, unresolved = verify(pep, raw, flags, VERIFIER.get(model.split("/")[0], "anthropic/claude-haiku-5.5"))
     return model, name, raw, flags, fixed, unresolved
 
 
